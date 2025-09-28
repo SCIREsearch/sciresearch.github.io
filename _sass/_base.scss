@@ -4,6 +4,15 @@
 
 // Typography
 
+html, body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+}
+
+
 p,
 h1,
 h2,
