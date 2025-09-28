@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SOCIAL & COMPUTATIONAL INTELLIGENCE RESEARCH
+title: Mission
 permalink: /
 subtitle: COMPUTATIONAL LINGUISTICS  |  MACHINE LEARNING  |  SOCIOLOGY  |  PSYCHOLOGY  |  ARTIFICIAL INTELLIGENCE
 
@@ -26,6 +26,8 @@ announcements:
   # scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   # limit: 3 # leave blank to include all the blog posts
 ---
+
+### OUR MISSION
 
 **SCIRE** (Latin: *to know*) explores and advances the frontiers of computational linguistics and its applications in
 contemporary society, designing and developing machine learning algorithms and models that promise unprecedented
