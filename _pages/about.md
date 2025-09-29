@@ -2,7 +2,7 @@
 layout: about
 title: Mission
 permalink: /
-subtitle: COMPUTATIONAL LINGUISTICS  |  MACHINE LEARNING  |  SOCIOLOGY  |  PSYCHOLOGY  |  ARTIFICIAL INTELLIGENCE
+subtitle: COMPUTATIONAL LINGUISTICS &nbsp; | &nbsp; MACHINE LEARNING &nbsp; | &nbsp; SOCIOLOGY &nbsp; | &nbsp; PSYCHOLOGY &nbsp; | &nbsp; ARTIFICIAL INTELLIGENCE
 
 # profile:
   # align: right
@@ -19,7 +19,7 @@ subtitle: COMPUTATIONAL LINGUISTICS  |  MACHINE LEARNING  |  SOCIOLOGY  |  PSYCH
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 # latest_posts:
   # enabled: true
@@ -27,9 +27,11 @@ announcements:
   # limit: 3 # leave blank to include all the blog posts
 ---
 
+<p style="margin-bottom: 16px;">&nbsp;</p>
+
 ### OUR MISSION
 
-**SCIRE** (Latin: *to know*) explores and advances the frontiers of computational linguistics and its applications in
+**SCIRE** (Latin: "to know") explores and advances the frontiers of computational linguistics and its applications in
 contemporary society, designing and developing machine learning algorithms and models that promise unprecedented
 comprehension of natural language pragmatics. We investigate social problems expressed using human language, especially
 problems that rely on a careful analysis of context beyond the immediate linguistic neighborhood of such expressions,
@@ -40,7 +42,8 @@ healthcare informatics, human-computer interaction, and information retrieval. T
 technology vectors, our research lies at the intersection of computational linguistics, machine learning, sociology,
 and psychology. 
 
-The core research areas of SCIRE Lab are: natural language processing, machine learning, and computational social science, which are explored through foundational theories in sociology, psychology, mathematics, and linguistics.
+Our core research areas are natural language processing, machine learning, and computational argumentation, which are explored through foundational theories in sociology, psychology, mathematics, and linguistics.
+<p style="margin-bottom: 1px;">&nbsp;</p>
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

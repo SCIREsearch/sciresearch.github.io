@@ -7,7 +7,7 @@
         style="max-height: 60vw"
       {% endif %}
     >
-      <table class="table table-sm table-borderless" style="font-size: 0.8rem;">
+      <table class="table table-sm table-borderless">
         {% assign news = site.news | reverse %}
         {% if include.limit and page.announcements.limit %}
           {% assign news_limit = page.announcements.limit %}
@@ -15,9 +15,9 @@
           {% assign news_limit = news_size %}
         {% endif %}
         {% for item in news limit: news_limit %}
-          <tr style="line-height: 1.2;">
-            <th scope="row" style="width: 10%; font-weight: lighter; color: #6c757d; padding: 0.25rem 0.1rem;">{{ item.date | date: '%m.%Y.' }}</th>
-            <td style="padding: 0.25rem 0.5rem;">
+          <tr>
+            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+            <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
