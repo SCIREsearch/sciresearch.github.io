@@ -1,5 +1,5 @@
 _site
-.swp
+*.swp
 .bundle
 .sass-cache
 .jekyll-cache
