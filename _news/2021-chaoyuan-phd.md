@@ -6,6 +6,6 @@ inline: true
 related_posts: false
 ---
 
-Chaoyuan Zuo
+Chaoyuan Zuo defends her Ph.D.
 &nbsp;&rArr;&nbsp;
 School of Journalism and Communication, Nankai University.

@@ -8,5 +8,5 @@ inline: true
 related_posts: false
 ---
 
-Vishnu Raja's work on dysarthric speech **EMNLP 2025**. &nbsp;&nbsp; [<i class="fas fa-file-pdf"></i>](https://arxiv.org/abs/2509.16718)
+Vishnu Raja's work on dysarthric speech @ **EMNLP 2025**. &nbsp;&nbsp; [<i class="fas fa-file-pdf"></i>](https://arxiv.org/abs/2509.16718)
 
