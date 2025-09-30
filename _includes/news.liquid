@@ -18,10 +18,27 @@
           <tr style="line-height: 1.2;">
             <th scope="row" style="width: 10%; font-weight: lighter; color: #6c757d; padding: 0.25rem 0.1rem;">{{ item.date | date: '%m.%Y.' }}</th>
             <td style="padding: 0.25rem 0.5rem;">
+             <!-- News type badge -->
+              {% if item.newstype %}
+                  <span class="news-type news-type-{{ item.newstype | slugify }}">{{ item.newstype }}</span>
+                {% if item.newstype == "phd" %}
+                  <i class="fa-solid fa-graduation-cap"></i>
+                {% endif %}
+              {% endif %}
+            </td>
+            <td style="padding: 0.25rem 0.5rem;">
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+              
+              <!-- Collaborators list -->
+              {% if item.collaborators %}
+                <div class="collaborators">
+                  Collaborators:
+                  {{ item.collaborators | array_to_sentence_string }}
+                </div>
               {% endif %}
             </td>
           </tr>

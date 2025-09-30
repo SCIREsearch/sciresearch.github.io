@@ -1,0 +1,29 @@
+.news-type {
+  font-size: 0.8em;
+  padding: 0px 6px;
+  margin-left: 0px;
+  margin-right: 10px;
+  border: 1px solid var(--global-back-to-top-bg-color);
+  color: var(--global-text-color-light);
+  border-radius: 14px;
+  font-variant: small-caps;
+}
+
+.news-type-award {
+  font-size: 0.8em;
+  margin-right: 35px;
+  border: 1px solid $indianred-color;
+  color: $indianred-color;
+}
+
+.collaborators {
+  font-size: 0.8em;
+  color: var(--global-text-color-light);
+  margin-top: 5px;
+}
+
+.news-type-phd {
+  font-size: 0.8em;
+  border: 1px solid $indianred-color;
+  color: $indianred-color;
+}
