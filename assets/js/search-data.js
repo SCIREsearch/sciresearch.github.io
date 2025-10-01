@@ -9,8 +9,8 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-research-projects",
-          title: "Research Projects",
+  },{id: "nav-research",
+          title: "Research",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -433,7 +433,7 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-we-are-awared-an-nsf-eager-research-grant-to-study-cross-genre-semantic-changes-in-information",
+            },},{id: "news-we-are-awared-an-nsf-eager-research-grant-to-study-cross-genre-semantic-changes-in-health-related-information-presented-and-disseminated-by-traditional-and-social-media",
           title: 'We are awared an NSF EAGER research grant to study cross-genre semantic changes...',
           description: "",
           section: "News",},{id: "news-chaoyuan-zuo-s-research-on-identification-of-check-worthy-claims-is-invited-to-the-conference-and-labs-of-the-evaluation-forum-clef-2019",
@@ -442,11 +442,11 @@ ninja.data = [{
           section: "News",},{id: "news-chaoyuan-zuo-and-narayan-acharya-publish-their-research-on-cross-genre-information-retrieval-emnlp-2020",
           title: 'Chaoyuan Zuo and Narayan Acharya publish their research on cross-genre information retrieval @...',
           description: "",
-          section: "News",},{id: "news-chaoyuan-zuo-school-of-journalism-and-communication-nankai-university",
-          title: 'Chaoyuan Zuo  ⇒  School of Journalism and Communication, Nankai University.',
+          section: "News",},{id: "news-chaoyuan-zuo-defends-her-ph-d-school-of-journalism-and-communication-nankai-university",
+          title: 'Chaoyuan Zuo defends her Ph.D.  ⇒  School of Journalism and Communication, Nankai University....',
           description: "",
-          section: "News",},{id: "news-we-receive-a-suny-multidisciplinary-small-team-award-to-identify-natural-language-predictor-of-chronic-kidney-disease-in-patients-with-ptsd",
-          title: 'We receive a SUNY Multidisciplinary Small Team Award to identify natural language predictor...',
+          section: "News",},{id: "news-we-receive-a-suny-multidisciplinary-small-team-award-to-identify-natural-language-predictors-of-chronic-kidney-disease-in-patients-with-ptsd",
+          title: 'We receive a SUNY Multidisciplinary Small Team Award to identify natural language predictors...',
           description: "",
           section: "News",},{id: "news-we-are-awarded-an-nsf-eager-research-grant-to-investigate-medical-data-against-privacy-laws",
           title: 'We are awarded an NSF EAGER research grant to investigate medical data against...',
@@ -454,8 +454,8 @@ ninja.data = [{
           section: "News",},{id: "news-we-are-awarded-a-pilot-research-grant-from-the-stony-brook-school-of-medicine-to-investigate-natural-language-signals-of-acute-kidney-injury-in-critically-ill-patients",
           title: 'We are awarded a pilot research grant from the Stony Brook School of...',
           description: "",
-          section: "News",},{id: "news-noushin-salek-faramarzi-natural-language-understanding-boeing",
-          title: 'Noushin Salek Faramarzi  ⇒  Natural Language Understanding @ Boeing.',
+          section: "News",},{id: "news-noushin-salek-faramarzi-defends-her-ph-d-natural-language-understanding-boeing",
+          title: 'Noushin Salek Faramarzi defends her Ph.D.  ⇒  Natural Language Understanding @ Boeing.',
           description: "",
           section: "News",},{id: "news-our-work-on-detecting-whataboutism-in-media-introduces-a-novel-mechanism-of-hard-negative-mining-findings-of-acl-2024",
           title: 'Our work on detecting whataboutism in media introduces a novel mechanism of hard...',
@@ -464,13 +464,13 @@ ninja.data = [{
           title: 'We are awarded a research grant from the AI Innovation Institute to decode...',
           description: "",
           section: "News",},{id: "news-chenlu-wang-s-work-on-class-distillation-acl-2025",
-          title: 'Chenlu Wang’s work on class distillation ACL 2025.   ',
+          title: 'Chenlu Wang’s work on class distillation @ ACL 2025.   ',
           description: "",
           section: "News",},{id: "news-yunik-tamrakar-and-ethan-myers-publish-their-work-on-android-app-permission-fidelity-privacy-security-and-trust-pst-2025",
           title: 'Yunik Tamrakar and Ethan Myers publish their work on Android app permission fidelity...',
           description: "",
           section: "News",},{id: "news-vishnu-raja-s-work-on-dysarthric-speech-emnlp-2025",
-          title: 'Vishnu Raja’s work on dysarthric speech EMNLP 2025.   ',
+          title: 'Vishnu Raja’s work on dysarthric speech @ EMNLP 2025.   ',
           description: "",
           section: "News",},{id: "news-we-are-awarded-a-research-grant-by-the-society-of-family-planning-to-study-misinformation-and-disinformation-surrounding-contraception",
           title: 'We are awarded a research grant by the Society of Family Planning to...',
@@ -520,6 +520,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-investigating-medical-app-data-against-privacy-laws",
+          title: 'Investigating Medical App Data against Privacy Laws',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/nsf-eager-medann-2023/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
