@@ -1,21 +1,15 @@
 ---
 layout: page
-title: Research Projects
+title: Research
 permalink: /projects/
 # description: A growing collection of your cool projects.
 nav: true
 nav_order: 1
-display_categories: [current, past]
-horizontal: false
+display_categories: [Current Projects, Past Projects]
+horizontal: true
 ---
 
-<p style=margin-bottom: 16px;">&nbsp;</p>
-
-Understanding human language plays a pivotal role in creating intelligent systems. With that in view, Banerjee's research spans multiple areas that bring together machine learning (ML) and natural language processing (NLP): biomedical knowledge discovery for better healthcare, misinformation analysis, and linguistics for security and privacy.
-
-Language use varies a lot depending on the what (content), why (intent), who (speaker/writer and audience), and how (style). Natural language understanding can be improved based on these insights, and intelligent systems built using a deeper understanding of human language can be employed for immense social good. The language used in medical research, for instance, is highly specialized as it is meant for technical comprehension by other researchers in that field; but a system capable of understanding it, and extracting useful information from it, can help healthcare practitioners and patients. Quotidian language use, on the other hand, is dictated by various aspects of individual and collective human behavior. An intelligent system can be refined to provide better help to individuals and/or social groups by interpretation of (and inference from) language.
-
-<p style=margin-bottom: 16px;">&nbsp;</p>
+Understanding human language plays a pivotal role in creating intelligent systems. With that in view, our research spans multiple areas that bring together machine learning (ML) and natural language processing (NLP): biomedical knowledge discovery for better healthcare, misinformation analysis, and linguistics for security and privacy.
 
 <!-- pages/projects.md -->
 <div class="projects">
