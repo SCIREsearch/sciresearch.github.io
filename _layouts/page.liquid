@@ -10,8 +10,27 @@ layout: default
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
+    <h1 class="post-title">
+      {% if page.heading %}
+        <div class="row">
+          <div class="col-10">
+            {{ page.heading }}
+          </div>
+          <div class="col-2">
+            {% include figure.liquid path=page.sponsor_img class="img-fluid rounded z-depth-1" %}
+          </div>
+        </div>
+      {% else %}
+        {{ page.title }}
+      {% endif %}
+    </h1>
+    <p class="post-description">
+      {% if page.subheading %}
+        {{ page.subheading }}
+      {% else %}
+        {{ page.description }}
+      {% endif %}
+    </p>
   </header>
 
   <article>
