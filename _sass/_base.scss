@@ -112,6 +112,7 @@ blockquote {
   }
 
   &.block-warning {
+    font-size: 0.9rem;
     border-color: var(--global-warning-block);
     background-color: var(--global-warning-block-bg);
 
