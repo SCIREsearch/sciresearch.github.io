@@ -56,9 +56,13 @@ Overall, it promotes user safety and privacy in the use of health applications.
 
 ---
 
-<small>*This project page is hosted and maintained by the principal investigator, [Dr. Ritwik Banerjee](https://www.ritwikbanerjee.com).*</small>
+#### Publications
+> {% reference tamrakar2025harnessing %}
+> &nbsp;&nbsp;&nbsp;&nbsp;
+> [<i class="fas fa-file-pdf"></i>](/assets/pdf/tamrakar2025harnessing.pdf)
+{: .block-references }
+  
+---
 
-<div class="publications">
-  {% bibliography -f papers -q @*[key=einstein1956investigations]* %}
-  {% bibliography -f papers -q @*[key=einstein1950meaning]* %}
-</div>
+<br>
+<span style="float: right; font-weight: 200; font-size: 0.75rem;"><i>This project page is hosted and maintained by the principal investigator, [Dr. Ritwik Banerjee](https://www.ritwikbanerjee.com).</i></span>

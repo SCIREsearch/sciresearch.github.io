@@ -106,6 +106,11 @@ blockquote {
     }
   }
 
+  &.block-references {
+    font-size: 1rem;
+    border-color: $indianred-color;
+  }
+
   &.block-warning {
     border-color: var(--global-warning-block);
     background-color: var(--global-warning-block-bg);
