@@ -268,8 +268,7 @@ scholar:
   last_name: [Banerjee]
   first_name: [Ritwik]
 
-  # style: association-for-computational-linguistics
-  style: university-of-york-mla
+  style: association-for-computational-linguistics
   locale: en
 
   source: /_bibliography/
