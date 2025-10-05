@@ -2,9 +2,9 @@
 layout: page
 title: Network Outage Analysis  # title on the card
 description: 2015
-img: assets/img/medann-project-card-img.png
+img: assets/img/outage-project-card-img.png
 # sponsor_img: assets/img/nsf-logo.png
-importance: 2
+importance: 3
 category: Past Projects
 related_publications: false
 ---

@@ -1,9 +1,9 @@
 ---
 layout: page
 title: CL4PHealth | Clinical Language Processing for Healthcare # title on the card
-heading: Clinical Language Processing [CL4PHealth] # heading for the project page
+heading: Clinical Language Processing for Healthcare | CL4PHealth # heading for the project page
 description: 2014 - 2015 <br> 2022 - 2025
-img: assets/img/todo
+img: assets/img/cl4phealth-card-img.png
 sponsor_img: assets/img/suny-logo.png
 importance: 2
 category: Past Projects
