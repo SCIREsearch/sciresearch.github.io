@@ -268,7 +268,8 @@ scholar:
   last_name: [Banerjee]
   first_name: [Ritwik]
 
-  style: association-for-computational-linguistics
+  # style: association-for-computational-linguistics
+  style: acm-siggraph
   locale: en
 
   source: /_bibliography/

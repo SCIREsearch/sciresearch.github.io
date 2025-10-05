@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Tracking Semantic Changes in Medical Information
+title: Tracking Semantic Changes in Medical Information # title on the card
+heading: Tracking Semantic Changes in Medical Information # project page hading (needed for sponsor image)
+description: 2018 - 2022
 img: assets/img/tracking-project-card-img.png
 sponsor_img: assets/img/nsf-logo.png
 importance: 1
-category: Current Projects
+category: Past Projects
 related_publications: false
 ---
 

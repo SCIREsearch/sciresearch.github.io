@@ -2,6 +2,7 @@
 layout: page
 title: Investigating Medical App Data against Privacy Laws  # title on the card
 heading: A Framework for Investigating Live Medical Data against Privacy Laws # heading for the project page
+description: 2023 - 2025
 img: assets/img/medann-project-card-img.png
 sponsor_img: assets/img/nsf-logo.png
 importance: 1
