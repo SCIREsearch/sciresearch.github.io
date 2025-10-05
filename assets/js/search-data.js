@@ -433,8 +433,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-we-are-awared-an-nsf-eager-research-grant-to-study-cross-genre-semantic-changes-in-health-related-information-presented-and-disseminated-by-traditional-and-social-media",
-          title: 'We are awared an NSF EAGER research grant to study cross-genre semantic changes...',
+            },},{id: "news-we-are-awarded-an-nsf-eager-research-grant-to-study-cross-genre-semantic-changes-in-health-related-information-presented-and-disseminated-by-traditional-and-social-media",
+          title: 'We are awarded an NSF EAGER research grant to study cross-genre semantic changes...',
           description: "",
           section: "News",},{id: "news-chaoyuan-zuo-s-research-on-identification-of-check-worthy-claims-is-invited-to-the-conference-and-labs-of-the-evaluation-forum-clef-2019",
           title: 'Chaoyuan Zuo’s research on identification of “check-worthy” claims is invited to the Conference...',
@@ -475,59 +475,29 @@ ninja.data = [{
           section: "News",},{id: "news-we-are-awarded-a-research-grant-by-the-society-of-family-planning-to-study-misinformation-and-disinformation-surrounding-contraception",
           title: 'We are awarded a research grant by the Society of Family Planning to...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-cl4phealth-clinical-language-processing-for-healthcare",
+          title: 'CL4PHealth | Clinical Language Processing for Healthcare',
+          description: "2014 - 2015  2022 - 2025",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/ai-for-healthcare/";
+            },},{id: "projects-forensic-linguistics",
+          title: 'Forensic Linguistics',
+          description: "Idiolects",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/forensic-linguistics/";
+            },},{id: "projects-network-outage-analysis",
+          title: 'Network Outage Analysis',
+          description: "2015",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/network-outage-analysis-2015/";
             },},{id: "projects-investigating-medical-app-data-against-privacy-laws",
           title: 'Investigating Medical App Data against Privacy Laws',
-          description: "",
+          description: "2023 - 2025",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nsf-eager-medann-2023/";
             },},{id: "projects-tracking-semantic-changes-in-medical-information",
           title: 'Tracking Semantic Changes in Medical Information',
-          description: "",
+          description: "2018 - 2022",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nsf-eager-tracking-2018/";
             },},{
