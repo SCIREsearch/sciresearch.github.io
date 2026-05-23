@@ -1,7 +1,3 @@
-### Ritwik Banerjee
-
-Principal Investigator
-
 **Research Assistant Professor, Computer Science**
 
 Banerjee leads the Social &amp; Computational Intelligence Research (SCIRE) Group at the Department of Computer Science in Stony Brook University, where is also affiliated with the AI Innovation Institute. His group explores biomedical language understanding and AI-driven healthcare, forensic linguistics, and computational models of natural language discourse and pragmatics. His work has a particular focus on efficient models for pragmatics -- designing bechmarks for difficult and overlooked aspects of language understanding, and designing training paradigms that achieve superior results with models 10x-100x smaller than contemporary LLMs. This includes the design of task-specific loss functions and careful manifold analysis for problems like detection of whataboutism in media, cross-genre misinformation detection, clinical expert finding, and distillation of small amounts of target data from noisy backgrounds.

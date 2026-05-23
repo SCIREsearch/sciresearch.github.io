@@ -7,31 +7,39 @@ nav: true
 nav_order: 4
 
 profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
+  - content: members/header-pi.md
+
   - align: left
     image: rb-profile-pic.png
+    image_circular: true
     content: members/ritwik-banerjee.md
-    image_circular: true # crops the image to make it circular
-    more_info: >
-      <p>206 New Computer Science</p>
-      <p>100 Engineering Drive</p>
     email: rbanerjee@cs.stonybrook.edu
     website: https://www.ritwikbanerjee.com
-    scholar_userid: 2LCxkUIAAAAJ
+    scholar: 2LCxkUIAAAAJ
     orcid: 0000-0003-0336-0258
     github: ritwik-banerjee
+
+  - content: members/header-phd-current.md
+
   - align: left
     image: kiera-gross.jpg
+    image_circular: true
     content: members/kiera-gross.md
-    image_circular: true # crops the image to make it circular
-    more_info: >
-    email: kegross@cs.stonybrook.edu
-    github: kegross
+
+  - content: members/header-phd-alumni.md
+
   - align: left
+#    image: chenlu-wang.jpg
+#    image_circular: false
     content: members/chenlu-wang.md
+
   - align: left
+#    image: noushin-salek-faramarzi.jpg
+#    image_circular: false
     content: members/noushin-faramarzi.md
+
   - align: left
+#    image: chaoyuan-zuo.jpg
+#    image_circular: false
     content: members/chaoyuan-zuo.md
 ---
