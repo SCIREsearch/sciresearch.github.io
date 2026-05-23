@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-people",
+          title: "People",
+          description: "Members of the Social &amp; Computational Intelligence Research (SCIRE) Group",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/people/";
+          },
         },{id: "nav-repositories",
           title: "repositories",
           description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
@@ -43,13 +50,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
-          },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
           },
         },{id: "dropdown-bookshelf",
               title: "bookshelf",
@@ -474,6 +474,15 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-we-are-awarded-a-research-grant-by-the-society-of-family-planning-to-study-misinformation-and-disinformation-surrounding-contraception",
           title: 'We are awarded a research grant by the Society of Family Planning to...',
+          description: "",
+          section: "News",},{id: "news-two-publications-ieee-international-conference-on-bioinformatics-and-biomedicine-bibm-i-on-evidence-based-reasoning-across-languages-ii-on-medical-expert-identification",
+          title: 'Two publications @ IEEE International Conference on Bioinformatics and Biomedicine (BIBM): (i) on...',
+          description: "",
+          section: "News",},{id: "news-chenlu-wang-defends-her-ph-d-on-pragmatic-language-understanding-and-information-integrity-research-scientist-meta",
+          title: 'Chenlu Wang defends her Ph.D. on Pragmatic Language Understanding and Information Integrity  ⇒ ...',
+          description: "",
+          section: "News",},{id: "news-our-multilingual-english-russian-and-mandarin-chinese-multinational-usa-uk-ukraine-russia-and-china-and-logitudinal-31-months-dataset-on-the-russo-ukrainian-war-lrec-2026",
+          title: 'Our multilingual (English, Russian, and Mandarin Chinese), multinational (USA, UK, Ukraine, Russia, and...',
           description: "",
           section: "News",},{id: "projects-cl4phealth-clinical-language-processing-for-healthcare",
           title: 'CL4PHealth | Clinical Language Processing for Healthcare',
