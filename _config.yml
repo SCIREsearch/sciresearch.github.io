@@ -47,6 +47,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
+navbar_brand_image: /assets/img/scire-logo-2.png
 footer_fixed: true
 search_enabled: false
 socials_in_search: false

@@ -2,6 +2,14 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
+      <!-- Navbar Brand / Logo -->
+      <a class="navbar-brand" href="{{ '/' | relative_url }}">
+        {% if site.navbar_brand_image %}
+          <img src="{{ site.navbar_brand_image | relative_url }}" alt="{{ site.title }}" height="60">
+        {% else %}
+          <span>{{ site.title }}</span>
+        {% endif %}
+      </a>
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"

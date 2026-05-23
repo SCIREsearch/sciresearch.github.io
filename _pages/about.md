@@ -4,14 +4,22 @@ title: Mission
 permalink: /
 subtitle: COMPUTATIONAL LINGUISTICS &nbsp; | &nbsp; MACHINE LEARNING &nbsp; | &nbsp; SOCIOLOGY &nbsp; | &nbsp; PSYCHOLOGY &nbsp; | &nbsp; ARTIFICIAL INTELLIGENCE
 
-# profile:
-  # align: right
-  # image: prof_pic.jpg
-  # image_circular: false # crops the image to make it circular
-  # more_info: >
-    # <p>555 your office number</p>
-    # <p>123 your address street</p>
-    # <p>Your City, State 12345</p>
+#profile:
+#  align: right
+#  image: rb-profile-pic.png
+#  image_circular: true # crops the image to make it circular
+#  more_info: >
+#    <a href="https://www.ritwikbanerjee.com/">Dr. Ritwik Banerjee</a>
+#    <p>Lead, SCIRE Group</p>
+#    <p><a href="mailto:rbanerjee@cs.stonybrook.edu"><i class="fas fa-envelope"></i>rbanerjee@cs.stonybrook.edu</a></p>
+#    <p>
+#      <span style="font-size: 0.8rem;">
+#        206 New Computer Science</br>
+#        100 Engineering Drive</br>
+#        Stony Brook, New York
+#      </span>
+#    </p>
+                                        
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -19,7 +27,7 @@ social: false # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: false # adds a vertical scroll bar if there are more than 3 news items
-  limit: # leave blank to include all the news in the `_news` folder
+  limit: 5 # leave blank to include all the news in the `_news` folder
 
 # latest_posts:
   # enabled: false
@@ -28,6 +36,27 @@ announcements:
 ---
 
 <p style="margin-bottom: 16px;">&nbsp;</p>
+
+<div class="profile float-right">
+  <h3>&nbsp;</h3>
+  <img src="/assets/img/rb-profile-pic.png" 
+       class="img-fluid z-depth-1 rounded-circle" 
+       alt="Ritwik Banerjee">
+  <div class="more-info">
+    <p><strong><a href="https://www.ritwikbanerjee.com/">Dr. Ritwik Banerjee</a></strong></p>
+    <p>Lead, SCIRE Group</p>
+    <p>
+      <a href="mailto:rbanerjee@cs.stonybrook.edu">
+        <i class="fas fa-envelope"></i> rbanerjee@cs.stonybrook.edu
+      </a>
+    </p>
+    <p style="font-size: 0.75rem;">
+      206 New Computer Science<br>
+      100 Engineering Drive<br>
+      Stony Brook, New York
+    </p>
+  </div>
+</div>
 
 ### OUR MISSION
 
@@ -42,6 +71,7 @@ healthcare informatics, human-computer interaction, and information retrieval. T
 technology vectors, our research lies at the intersection of computational linguistics, machine learning, sociology,
 and psychology. 
 
-Our core research areas are natural language processing, machine learning, and computational argumentation, which are explored through foundational theories in sociology, psychology, mathematics, and linguistics.
+Our core research areas are natural language pragmatics, semantic representation, information retrieval, and computational
+argumentation, which are explored through foundational theories in sociology, psychology, mathematics, and linguistics.
 <p style="margin-bottom: 1px;">&nbsp;</p>
 
