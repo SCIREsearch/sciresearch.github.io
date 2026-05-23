@@ -5,8 +5,8 @@ heading: Tracking Semantic Changes in Medical Information # project page hading 
 description: 2018 - 2022
 img: assets/img/tracking-project-card-img.png
 sponsor_img: assets/img/nsf-logo.png
-importance: 1
-category: Past Projects
+importance: 2
+category: Research Projects
 related_publications: false
 ---
 

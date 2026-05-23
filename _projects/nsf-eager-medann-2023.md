@@ -5,8 +5,8 @@ heading: A Framework for Investigating Live Medical Data against Privacy Laws # 
 description: 2023 - 2025
 img: assets/img/medann-project-card-img.png
 sponsor_img: assets/img/nsf-logo.png
-importance: 1
-category: Current Projects
+importance: 2
+category: Research Projects
 related_publications: false
 ---
 
@@ -33,12 +33,12 @@ related_publications: false
 
 ---
 
-We are developing a framework to assess and improve the privacy and security of mobile health applications (apps) that collect and use personal health data.
+We assessed the privacy and security of mobile health applications (apps) that collect and use personal health data.
 These apps, commonly used on smartphones and smart devices, have the potential to greatly improve access to healthcare.
 However, there are concerns about the privacy and protection of the sensitive user data they collect and generate.
-We recognize the need for a user-centered approach that ensures compliance with privacy regulations, enhances clarity in legal documents and app descriptions, and incorporates privacy and security measures during the app design process.
+Our research used state-of-the-art language models to analyze whether apps comply with (i) the permission boundaries they claim, and (ii) GDPR regulations. Moreover, we also analyzed the research landscape on privacy compliance globally, with respect to various privacy laws across multiple nations.
 
-**Our goal is to provide users with more control over their personal data while using health apps and to establish a framework that guides app developers in creating safe and transparent applications.**
+**Through this research, we provided measurements and tools so that users have more control over their personal data while using health apps, and indicated guidelines for app developers to create safe and transparent applications.**
 
 This includes the design and development of
 - models that are able to automatically infer app permissions from textual descriptions with higher accuracy and lower annotation costs than previous approaches; and

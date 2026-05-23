@@ -4,8 +4,8 @@ title: Forensic Linguistics # title on the card
 description: Idiolects
 img: assets/img/forensic-linguistics-card-img.png
 # sponsor_img: assets/img/nsf-logo.png
-importance: 4
-category: Past Projects
+importance: 6
+category: Research Projects
 related_publications: false
 ---
 

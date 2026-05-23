@@ -1,18 +1,71 @@
 ---
 ---
 
+@dataset{mohanty2026dnipro,
+  author = {Mohanty, Dikshya and Sabadyn, Taisiia and Rodrigues, Jelwin and Wang, Chenlu and Kalugade, Abhishek and Banerjee, Ritwik},
+  title = {{Diverse Narratives and International Perspectives on the Russo-Ukrainian Offensive (DNIPRO)}},
+  month = feb,
+  year  = 2026,
+  publisher = {Zenodo},
+  version = {v1},
+  doi = {10.5281/zenodo.18470677},
+  abstract = {DNIPRO is a longitudinal corpus of 246,229 news articles documenting the Russo-Ukrainian war from February 2022 to August 2024. The dataset captures competing geopolitical narratives from 11 media outlets across five nation-states (Russia, Ukraine, U.S., U.K., China) in three languages (English, Russian, Mandarin Chinese). The corpus includes comprehensive metadata, named entity annotations, sentiment scores for key actors and events, and topical framing labels based on a nine-category schema. All annotations are validated by human annotators. The dataset is designed to support research in computational journalism, media framing analysis, information warfare studies, and cross-lingual narrative analysis.}
+}
+
+@inproceedings{mohanty2026longitudinal,
+  title = {{A Longitudinal, Multinational, and Multilingual Corpus of News Coverage of the Russo-Ukrainian War}},
+  author = {Mohanty, Dikshya and Sabadyn, Taisiia and Rodrigues, Jelwin and Wang, Chenlu and Kalugade, Abhishek and Banerjee, Ritwik},
+  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
+  month = {May},
+  year = {2026},
+  pages = {6452--6471},
+  address = {Palma, Mallorca, Spain},
+  publisher = {European Language Resources Association (ELRA)},
+  editor = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
+  doi = {10.63317/5ecxdux9s9ft},
+  abstract = {We present DNIPRO, a corpus of 246K news articles from the Russo-Ukrainian war (Feb 2022 – Aug 2024) spanning eleven outlets across five nation-states (Russia, Ukraine, U.S., U.K., China) and three languages. The corpus features comprehensive metadata and human-evaluated annotations for stance, sentiment, and topical framing, enabling systematic analysis of competing geopolitical narratives. It is uniquely suited for empirical studies of narrative divergence, media framing, and information warfare. Our exploratory analyses reveal how media outlets construct incompatible realities through divergent attribution and topical selection without direct refutation of opposing narratives. dnipro empowers empirical research on narrative evolution, cross-lingual information flow, and computational detection of implicit contradictions in fragmented information ecosystems.},
+  bibtex_show = {true},
+  pdf = {mohanty2026dnipro.pdf},
+  preview = {true},
+  code = {https://github.com/dikshyam/dnipro-codebase},
+  %google_scholar_id = {}
+}
+
+@inproceedings{zuo2025large,
+  author = {Zuo, Chaoyuan and Wang, Chenlu and Banerjee, Ritwik},
+  booktitle = {2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)}, 
+  title = {{Large-Scale Biomedical Expert Finding for Health Claim Verification: A PubMed-based Retrieval Framework}}, 
+  year = {2025},
+  month = {December},
+  address = {Wuhan, China},
+  publisher = {IEEE},
+  pages = {4578--4583},
+  abstract = {{Verifying health claims amid rampant misinformation requires identifying qualified experts - a manual process that cannot scale. We address this challenge with a computational framework that automatically identifies biomedical researchers to evaluate health claims by analyzing their PubMed publication profiles. We establish the first benchmark for this cross-genre retrieval task, linking 93,404 health claims to 153,147 biomedical experts. Our two-stage neural pipeline addresses the semantic heterogeneity between informal health claims and formal research literature. Systematic evaluation reveals a striking finding: domain-specific models achieve 84.2% Mean Reciprocal Rank, substantially outperforming general-purpose alternatives, including state-of-the-art LLM-based rerankers fine-tuned on domain-specific data. Our findings underscore the necessity of specialized benchmarks for cross-genre information retrieval, and specialized pretraining for biomedical expert identification, while our scalable architecture enables rapid, automated expert matching for evidence-based claim verification in clinical and public health contexts.}},
+  doi = {10.1109/BIBM66473.2025.11356094},
+  bibtex_show = {true},
+  pdf = {zuo2025large.pdf},
+  preview = {true},
+  google_scholar_id = {kRWSkSYxWN8C}
+}
+
 @inproceedings{raja2025idiosyncratic,
   author = {Vishnu Raja and Adithya V. Ganesan and Anand Syamkumar and Ritwik Banerjee and H. A. Schwartz},
+  editor = {Christodoulopoulos, C. and Chakraborty, T. and Rose, C. and Peng, V.},
   title = {{Idiosyncratic Versus Normative Modeling of Atypical Speech Recognition: Dysarthric Case Studies}},
-  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  booktitle = {Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
   year = {2025},
   month = {November},
+  address = {Suzhou, China},
+  publisher = {Association for Computational Linguistics},
+  doi = {10.18653/v1/2025.emnlp-main.1701},
+  pages = {33526--33537},
   abstract = {State-of-the-art automatic speech recognition (ASR) models like Whisper, perform poorly on atypical speech, such as that produced by individuals with dysarthria. Past works for atypical speech have mostly investigated fully personalized (or idiosyncratic) models, but modeling strategies that can both generalize and handle idiosyncracy could be more effective for capturing atypical speech. To investigate this, we compare four strategies: (a) *normative* models trained on typical speech (no personalization), (b) idiosyncratic models completely personalized to individuals, (c) dysarthric-normative models trained on other dysarthric speakers, and  (d) dysarthric-idiosyncratic models which combine strategies by first modeling normative patterns before adapting to individual speech. In this case study, we find the dysarthric-idiosyncratic model performs better than idiosyncratic approach while requiring less than half as much personalized data (36.43 WER with 128 train size vs 36.99 with 256). Further, we found that tuning the speech encoder alone (as opposed to the LM decoder) yielded the best results reducing word error rate from 71\% to 32\% on average. Our findings highlight the value of leveraging both normative (cross-speaker) and idiosyncratic (speaker-specific) patterns to improve ASR for underrepresented speech populations.},
   bibtex_show = {true},
   pdf = {raja2025idiosyncratic.pdf},
   preview = {true},
   arxiv = {2509.16718},
-  %google_scholar_id = {}
+  google_scholar_id = {eflP2zaiRacC},
+  code = {https://github.com/VishnuRaja98/Dysarthric-Speech-Transcription}
 }
 
 @inproceedings{tamrakar2025harnessing,
@@ -28,7 +81,7 @@
   bibtex_show ={true},
   pdf = {tamrakar2025harnessing.pdf},
   selected = {false},
-  %google_scholar_id = {todo},
+  google_scholar_id = {eJXPG6dFmWUC},
   preview = {true},
   slides = {todo}
 }
@@ -69,7 +122,7 @@
     google_scholar_id = {q3oQSFYPqjQC},
     bibtex_show={true},
     pdf={gupta2025scire-clef.pdf},
-    code={https://github.com/hpgupt/GutBrainIE-CLEF25},
+    %code={https://github.com/hpgupt/GutBrainIE-CLEF25},
     selected={false},
     preview={true}
 }
@@ -110,7 +163,7 @@
     bibtex_show = {true},
     pdf = {wang2025class.pdf},
     arxiv = {2505.11829},
-    %google_scholar_id = {}
+    google_scholar_id = {fQNAKQ3IYiAC}
 }
 
 @inproceedings{phi2024paying,
@@ -340,8 +393,8 @@
   bibtex_show = {true},
   preview = {true},
   pdf = {banerjee2015patient.pdf},
-  award_name={Best Technical Paper Award},
-  award={This paper on an improved patient care system, won the IEEE International Conference on Healthcare Informatics (ICHI) 2015 <strong>Best Technical Paper Award</strong>. This system was the outcome of  collaborative research  between Dr. Ritwik Banerjee and Dr. I.V. Ramakrishnan from Computer Science and Dr. Mark Henry, Chair of Emergency Medicine and Matthew Perciavalle, Clinical Pharmacist, from Stony Brook School of Medicine.},
+  award_name={<span style="color: red; font-weight: bold;">Best Technical Paper</span>},
+  award={This paper on an improved patient care system, won the IEEE International Conference on Healthcare Informatics (ICHI) 2015 <span style="color: red; font-weight: bold;">Best Technical Paper Award</span>. This system was the outcome of  collaborative research  between Dr. Ritwik Banerjee and Dr. I.V. Ramakrishnan from Computer Science, Dr. Mark Henry, Chair of Emergency Medicine, and Matthew Perciavalle, Clinical Pharmacist, from Stony Brook School of Medicine.},
   google_scholar_id = {bEWYMUwI8FkC}
 }
 
@@ -357,7 +410,7 @@
   abstract="Understanding network reliability and outages is critical to the ``health'' of the Internet infrastructure. Unfortunately, our ability to analyze Internet outages has been hampered by the lack of access to public information from key players. In this paper, we leverage a somewhat unconventional dataset to analyze Internet reliability---the outages mailing list. The mailing list is an avenue for network operators to share information and insights about widespread outages. Using this unique dataset, we perform a first-of-its-kind longitudinal analysis of Internet outages from 2006 to 2013 using text mining and natural language processing techniques. We observe several interesting aspects of Internet outages: a large number of application and mobility issues that impact users, a rise in content, mobile issues, and discussion of large-scale DDoS attacks in recent years.",
   isbn="978-3-319-15509-8",
   location="New York, USA",
-  url={https://doi.org/10.1007/978-3-319-15509-8_16},
+  doi = "10.1007/978-3-319-15509-8_16",
   bibtex_show = {true},
   preview = {true},
   pdf = {banerjee2015internet.pdf},
@@ -394,15 +447,14 @@
   pages="271--283",
   doi = {10.1007/978-3-030-28577-7_23},
   url = {https://link.springer.com/chapter/10.1007/978-3-030-28577-7_23},
-  note = {Invited Paper},
   abstract = {As the spread of information has received a compelling boost due to pervasive use of social media, so has the spread of misinformation. The sheer volume of data has rendered the traditional methods of expert-driven manual fact-checking largely infeasible. As a result, computational linguistics and data-driven algorithms have been explored in recent years. Despite this progress, identifying and prioritizing what needs to be checked has received little attention. Given that expert-driven manual intervention is likely to remain an important component of fact-checking, especially in specific domains (e.g., politics, environmental science), this identification and prioritization is critical. A successful algorithmic ranking of “check-worthy” claims can help an expert-in-the-loop fact-checking system, thereby reducing the expert’s workload while still tackling the most salient bits of misinformation. In this work, we explore how linguistic syntax, semantics, and the contextual meaning of words play a role in determining the check-worthiness of claims. Our preliminary experiments used explicit stylometric features and simple word embeddings on the English language dataset in the Check-worthiness task of the CLEF-2018 Fact-Checking Lab, where our primary solution outperformed the other systems in terms of the mean average precision, R-precision, reciprocal rank, and precision at k for multiple values k. Here, we present an extension of this approach with more sophisticated word embeddings and report further improvements in this task.},
-  award_name={Invited Paper},
-  award={This paper was invited to CLEF 2019 as one of the "Best of the Labs".},
+  award_name={<span style="color: red; font-weight: bold;">Invited Paper</span>},
+  award={This paper was invited to CLEF 2019 as "Best of the Labs".},
   google_scholar_id = {f2IySw72cVMC},
   bibtex_show={true},
   pdf={zuo2019tocheck-clef.pdf},
   selected={false},
-  preview={true}
+  preview={true},
 }
 
 @inproceedings{zuo2019style,
@@ -428,7 +480,7 @@
 @inproceedings{banerjee2021diagnosis,
   author={Banerjee, Ritwik and Ray, Indrakshi},
   booktitle={2021 IEEE Third International Conference on Cognitive Machine Intelligence (CogMI)}, 
-  title={{Diagnosis, Prevention, and Cure for Misinformation *}},
+  title={{Diagnosis, Prevention, and Cure for Misinformation}},
   year={2021},
   pages={156--162},
   publisher={IEEE},
@@ -441,7 +493,7 @@
   pdf={https://par.nsf.gov/servlets/purl/10341221},
   selected={false},
   preview={true},
-  annotation={* Vision Paper}
+  annotation={Vision Paper}
 }
 
 @inproceedings{salekfaramarzi2022combining,
