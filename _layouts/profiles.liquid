@@ -6,25 +6,34 @@ layout: page
     {% if page.profiles %}
       {% for profile in page.profiles %}
 
-        {% if profile.image %}
+        {% if profile.name %}
           <div class="team-card-h">
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            <img src="{{ profile_image_path | relative_url }}" alt="{{ profile.name }}">
+
+            {% if profile.image %}
+              {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+              <img src="{{ profile_image_path | relative_url }}" alt="{{ profile.name }}">
+            {% else %}
+              <div class="initials-placeholder">
+                {% assign name_words = profile.name | split: ' ' %}
+                {% for word in name_words %}{{ word | slice: 0 }}{% endfor %}
+              </div>
+            {% endif %}
+
             <div class="team-card-h-body">
-              <p class="team-card-h-name">
-                {% if profile.url %}
-                  <a href="{{ profile.url | relative_url }}" class="team-card-h-link">
-                {% endif %}
+
+              {% if profile.url %}
+                <a href="{{ profile.url | relative_url }}" class="team-card-h-link">
+              {% endif %}
                 <p class="team-card-h-name">{{ profile.name }}</p>
-                  {% if profile.position %}
-                    <p class="team-card-h-position">{{ profile.position }}</p>
-                  {% endif %}
-                  {% if profile.bio %}
-                    <p class="team-card-h-bio">{{ profile.bio }}</p>
-                  {% endif %}
-                {% if profile.url %}
-                  </a>
+                {% if profile.position %}
+                  <p class="team-card-h-position">{{ profile.position }}</p>
                 {% endif %}
+                {% if profile.bio %}
+                  <p class="team-card-h-bio">{{ profile.bio }}</p>
+                {% endif %}
+              {% if profile.url %}
+                </a>
+              {% endif %}
 
               {% if profile.email or profile.website or profile.scholar or profile.orcid or profile.github or profile.linkedin %}
                 <div class="team-card-h-links">

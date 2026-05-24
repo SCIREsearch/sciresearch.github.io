@@ -66,12 +66,30 @@ body.sticky-bottom-footer {
   border-radius: 8px;
   overflow: hidden; // so that image respects border-radius
 
+  img, .initials-placeholder {
+    width: 120px;
+    flex-shrink: 0;
+    align-self: stretch;
+  }
+
   img {
     width: 150px;
     height: auto; // combined with align-self: stretch lets the image fill that height 
     object-fit: cover; // together with the above, object-fit: cover keeps the image from distorting
     border-radius: 0; // used to be 4px, but now ... let the card handle the rounding
     flex-shrink: 0;
+  }
+
+  .initials-placeholder {
+    width: 150px; // same as an actual image
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    background-color: var(--global-theme-color);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
   }
 
   .team-card-h-body {
