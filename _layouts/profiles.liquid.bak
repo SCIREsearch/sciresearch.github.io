@@ -1,0 +1,50 @@
+---
+layout: page
+---
+<div class="post">
+  <article>
+    {% if page.profiles %}
+      {% assign in_grid = false %}
+      {% for profile in page.profiles %}
+
+        {% if profile.image %}
+          {% unless in_grid %}
+            <div class="team-grid">
+            {% assign in_grid = true %}
+          {% endunless %}
+
+          {% if profile.url %}
+            <a href="{{ profile.url | relative_url }}" class="team-card">
+          {% else %}
+            <div class="team-card">
+          {% endif %}
+
+            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+            <img src="{{ profile_image_path | relative_url }}" alt="{{ profile.name }}">
+            <div class="team-card-body">
+              <p class="team-card-name">{{ profile.name }}</p>
+              <p class="team-card-position">{{ profile.position }}</p>
+            </div>
+
+          {% if profile.url %}
+            </a>
+          {% else %}
+            </div>
+          {% endif %}
+
+        {% else %}
+          {% if in_grid %}
+            </div>
+            {% assign in_grid = false %}
+          {% endif %}
+          {% if profile.content %}
+            {% capture header_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+            <div class="team-section-header">{{ header_content | markdownify }}</div>
+          {% endif %}
+        {% endif %}
+
+      {% endfor %}
+      {% if in_grid %}</div>{% endif %}
+    {% endif %}
+  </article>
+</div>

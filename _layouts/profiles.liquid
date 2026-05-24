@@ -5,50 +5,60 @@ layout: page
   <article>
     {% if page.profiles %}
       {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-          {% if profile.email or profile.website or profile.scholar or profile.orcid or profile.github %}
-            <div class="social mt-2">
-              {% if profile.email %}
-                <a href="mailto:{{ profile.email }}" title="Email"><i class="fas fa-envelope"></i></a>
-              {% endif %}
-              {% if profile.website %}
-                <a href="{{ profile.website }}" title="Website"><i class="fas fa-globe"></i></a>
-              {% endif %}
-              {% if profile.scholar %}
-                <a href="https://scholar.google.com/citations?user={{ profile.scholar }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-              {% endif %}
-              {% if profile.orcid %}
-                <a href="https://orcid.org/{{ profile.orcid }}" title="ORCID"><i class="ai ai-orcid"></i></a>
-              {% endif %}
-              {% if profile.github %}
-                <a href="https://github.com/{{ profile.github }}" title="GitHub"><i class="fab fa-github"></i></a>
-              {% endif %}
-            </div>
-          {% endif %}
-        </div>
 
-        <div class="clearfix">
+        {% if profile.image %}
+          <div class="team-card-h">
+            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+            <img src="{{ profile_image_path | relative_url }}" alt="{{ profile.name }}">
+            <div class="team-card-h-body">
+              <p class="team-card-h-name">
+                {% if profile.url %}
+                  <a href="{{ profile.url | relative_url }}" class="team-card-h-link">
+                {% endif %}
+                <p class="team-card-h-name">{{ profile.name }}</p>
+                  {% if profile.position %}
+                    <p class="team-card-h-position">{{ profile.position }}</p>
+                  {% endif %}
+                  {% if profile.bio %}
+                    <p class="team-card-h-bio">{{ profile.bio }}</p>
+                  {% endif %}
+                {% if profile.url %}
+                  </a>
+                {% endif %}
+
+              {% if profile.email or profile.website or profile.scholar or profile.orcid or profile.github or profile.linkedin %}
+                <div class="team-card-h-links">
+                  {% if profile.email %}
+                    <a href="mailto:{{ profile.email }}" title="Email"><i class="fas fa-envelope"></i></a>
+                  {% endif %}
+                  {% if profile.website %}
+                    <a href="{{ profile.website }}" title="Website"><i class="fas fa-globe"></i></a>
+                  {% endif %}
+                  {% if profile.scholar %}
+                    <a href="https://scholar.google.com/citations?user={{ profile.scholar }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                  {% endif %}
+                  {% if profile.orcid %}
+                    <a href="https://orcid.org/{{ profile.orcid }}" title="ORCID"><i class="ai ai-orcid"></i></a>
+                  {% endif %}
+                  {% if profile.github %}
+                    <a href="https://github.com/{{ profile.github }}" title="GitHub"><i class="fab fa-github"></i></a>
+                  {% endif %}
+                  {% if profile.linkedin %}
+                    <a href="https://linkedin.com/in/{{ profile.linkedin }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                  {% endif %}
+                </div>
+              {% endif %}
+
+            </div>
+          </div>
+
+        {% else %}
           {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
+            {% capture header_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+            <div class="team-section-header">{{ header_content | markdownify }}</div>
           {% endif %}
-        </div>
+        {% endif %}
+
       {% endfor %}
     {% endif %}
   </article>
