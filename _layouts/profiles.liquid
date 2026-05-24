@@ -56,6 +56,13 @@ layout: page
                     <a href="https://linkedin.com/in/{{ profile.linkedin }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                   {% endif %}
                 </div>
+                {% if profile.location %}
+                  <div class="team-card-h-links">
+                    <p class="team-card-h-location">
+                        <i class="fas fa-map-marker-alt"></i>&nbsp; {{ profile.location }}
+                    </p>
+                  </div>
+                {% endif %}
               {% endif %}
 
             </div>

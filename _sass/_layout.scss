@@ -140,6 +140,12 @@ body.sticky-bottom-footer {
       .team-card-h-name { color: var(--global-theme-color); }
     }
   }
+  
+  .team-card-h-location {
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+    margin: 0.4rem 0 0 0;
+  }
 }
 
 .team-section-header {

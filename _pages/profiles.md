@@ -18,6 +18,8 @@ profiles:
     scholar: 2LCxkUIAAAAJ
     orcid: 0000-0003-0336-0258
     github: ritwik-banerjee
+    linkedin: ritwikbanerjee
+    location: New Computer Science, 100 Engineering Drive, Stony Brook
     bio: >
       Ritwik Banerjee leads the SCIRE Group in the Department of Computer Science at Stony Brook University, where his research develops computational methods for understanding language beyond its literal meaning -- including argumentation, misinformation, and narrative manipulation. His research has been funded by the NSF (the SaTC program and the CNS division), the Society for Family Planning, the AI Innovation Institute, and Broadridge Financial Solutions, Inc. He has produced over 30 peer-reviewed publications, and advised three PhD students to completion, with alumni now at Meta, Boeing AI, and Nankai University.
 
@@ -163,6 +165,7 @@ profiles:
   - content: people/header-ms-alumni.md
 
   - name: Parth Thapliyal
+    image: parth-thapliyal.jpg
 
   - name: Vishnu Raja
     position: Machine Learning Engineer, Meta
