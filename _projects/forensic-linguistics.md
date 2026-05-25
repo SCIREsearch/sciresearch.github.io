@@ -2,6 +2,7 @@
 layout: page
 title: Forensic Linguistics # title on the card
 description: Idiolects
+research_area: pragmatic-language
 img: assets/img/forensic-linguistics-card-img.png
 # sponsor_img: assets/img/nsf-logo.png
 importance: 6
