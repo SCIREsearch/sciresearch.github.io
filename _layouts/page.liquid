@@ -10,27 +10,24 @@ layout: default
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">
-      {% if page.heading %}
-        <div class="row">
-          <div class="col-10">
-            {{ page.heading }}
-          </div>
-          <div class="col-2">
-            {% include figure.liquid path=page.sponsor_img class="img-fluid rounded z-depth-1" %}
-          </div>
-        </div>
+  <h1 class="post-title">
+    {{ page.heading | default: page.title }}
+  </h1>
+  {% if page.sponsor_imgs or page.sponsor_img %}
+    <div class="project-sponsors-row">
+      {% if page.sponsor_imgs %}
+        {% for img in page.sponsor_imgs %}
+          {% include figure.liquid path=img class="img-fluid project-sponsor-logo" %}
+        {% endfor %}
       {% else %}
-        {{ page.title }}
+        {% include figure.liquid path=page.sponsor_img class="img-fluid project-sponsor-logo" %}
       {% endif %}
-    </h1>
-    <p class="post-description">
-      {% if page.subheading %}
-        {{ page.subheading }}
-      {% endif %}
-    </p>
+    </div>
+  {% endif %}
+  <p class="post-description">
+    {% if page.subheading %}{{ page.subheading }}{% endif %}
+  </p>
   </header>
-
   <article>
     {{ content }}
   </article>

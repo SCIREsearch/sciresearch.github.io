@@ -1,3 +1,257 @@
+// --- For proper gap just before a research section ---
 .projects + h4 {
   margin-top: 1rem;
+}
+
+// --- Research Stats strip ---
+.scire-strip-wrap {
+  margin: 2rem 0 2.5rem;
+}
+
+.scire-stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--global-divider-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.scire-stat {
+  background: var(--global-bg-color);
+  padding: 1.25rem 0.75rem;
+  text-align: center;
+}
+
+.scire-stat-value {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  line-height: 1.1;
+}
+
+.scire-stat-label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--global-text-color);
+  opacity: 0.6;
+  margin-top: 5px;
+  line-height: 1.35;
+}
+
+.scire-collab-footer {
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-top: none;
+  padding: 0.55rem 1.25rem;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.scire-ug-footer {
+  border-radius: 0 0 8px 8px;
+}
+
+.scire-collab-label {
+  font-size: 0.72rem;
+  color: var(--global-text-color);
+  opacity: 0.55;
+  white-space: nowrap;
+}
+
+.scire-collab-name {
+  font-size: 0.72rem;
+  color: var(--global-text-color);
+  opacity: 0.85;
+}
+
+.scire-collab-sep {
+  font-size: 0.72rem;
+  color: var(--global-text-color);
+  opacity: 0.35;
+}
+
+// Collapse to 3 columns on narrow screens
+@media (max-width: 600px) {
+  .scire-stats {
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+// --- Ph.D. placements ---
+.scire-section-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color);
+  opacity: 0.5;
+  margin: 0 0 1rem;
+}
+
+.scire-placements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.scire-placement-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  padding: 1rem 1.125rem;
+  background: var(--global-card-bg-color);
+}
+
+.scire-placement-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.scire-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--global-theme-color);
+  opacity: 0.15;  // will be overridden below
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  flex-shrink: 0;
+
+  // Reset opacity on the element itself; use background-color trick instead
+  background: rgba(var(--global-theme-color-rgb, 0, 118, 223), 0.12);
+  color: var(--global-theme-color);
+  opacity: 1;
+}
+
+.scire-placement-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  line-height: 1.2;
+}
+
+.scire-placement-year {
+  font-size: 0.75rem;
+  color: var(--global-text-color);
+  opacity: 0.55;
+  margin-top: 2px;
+}
+
+.scire-placement-body {
+  border-top: 1px solid var(--global-divider-color);
+  padding-top: 0.65rem;
+}
+
+.scire-placement-role {
+  font-size: 0.85rem;
+  color: var(--global-text-color);
+  line-height: 1.3;
+}
+
+.scire-placement-org {
+  font-size: 0.78rem;
+  color: var(--global-text-color);
+  opacity: 0.6;
+  margin-top: 2px;
+}
+
+// Spacing between card grid and next section heading
+.scire-placements + h2,
+.projects + h2 {
+  margin-top: 2.5rem;
+}
+
+// --- For highlight-worthy notes (e.g., central role of student research) ---
+.scire-highlight {
+  font-size: 0.85rem;
+  color: #D66037;
+}
+
+// --- Project card overrides ---
+.projects .card {
+  border-radius: 0;
+  border-left: 3px solid var(--global-theme-color);
+
+  // Flatten hover: background shift instead of shadow lift
+  &.hoverable:hover {
+    box-shadow: none;
+    transform: none;
+    background-color: var(--global-hover-bg-color);
+  }
+}
+
+// Square images — remove all rounding
+.projects .card img,
+.projects .card .rounded-start,
+.projects .card .rounded {
+  border-radius: 0;
+}
+
+// In project cards, zero out figure's browser-default margins
+.projects .card figure {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.projects .card figure picture {
+  display: block;
+  height: 100%;
+}
+
+// Make the project card image fill the column completely
+.projects .card .card-img {
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.projects .card .card-text {
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 300;
+  opacity: 0.75;
+}
+
+.project-sponsor {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--global-text-color);
+  opacity: 0.65;
+  margin-top: 0.15rem;
+  margin-bottom: 0.15rem;
+}
+
+.project-sponsors-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 0.5rem 0 1rem;
+
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.project-sponsor-logo {
+  max-width: 96px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Tracking Semantic Changes in Medical Information # title on the card
+title: Semantic Drift in Medical Information # title on the card
 heading: Tracking Semantic Changes in Medical Information # project page hading (needed for sponsor image)
-description: 2018 - 2022
+description: Health misinformation and deceptive support across genres
 research_area: trustworthy-ai
 img: assets/img/tracking-project-card-img.png
 sponsor_img: assets/img/nsf-logo.png
@@ -27,19 +27,19 @@ related_publications: false
 
 > [**Ritwik Banerjee**](https://www.ritwikbanerjee.com) \| Principal Investigator
 > <br>
-> Chaoyuan Zuo, Ph.D. &nbsp;&rArr;&nbsp;  Faculty @ School of Journalism & Communication, Nankai University (China)
+> Chaoyuan Zuo | Doctoral Researcher &nbsp;&rarr;&nbsp;  Lecturer (tenure-track), School of Journalism & Communication, Nankai University
 > <br>
-> Noushin Salek Faramarzi, Ph.D. &nbsp;&rArr;&nbsp; Natural Language Understanding @ Boeing
+> Noushin Salek Faramarzi | Doctoral Researcher &nbsp;&rarr;&nbsp; NLP Researcher, Boeing AI
 > <br>
-> Kritik Mathur, M.S. &nbsp;&rArr;&nbsp; Software Engineer @ Amazon
+> Kritik Mathur | M.S. Researcher &nbsp;&rarr;&nbsp; Software Engineer, Amazon
 > <br>
-> Dhruv Kela, M.S. &nbsp;&rArr;&nbsp; Software Engineer @ DigitalOcean
+> Dhruv Kela | M.S. Researcher &nbsp;&rarr;&nbsp; Software Engineer, DigitalOcean
 > <br>
-> Narayan Acharya, M.S. &nbsp;&rArr;&nbsp; Research Engineer @ dmetrics, Inc.
+> Narayan Acharya | M.S. Researcher &nbsp;&rarr;&nbsp; Research Engineer, dMetrics, Inc.
 > <br>
-> Ayla Karakas, B.S. (Linguistics) Ph.D., &nbsp;&rArr;&nbsp; Computational Linguistics @ Yale
+> Ayla Karakas \| Undergraduate Researcher (Linguistics) &nbsp;&rarr;&nbsp; Ph.D., Computational Linguistics, Yale University
 > <br>
-> Qi Zhang, B.S. &nbsp;&rArr;&nbsp; MS, University of California San Diego
+> Qi Zhang \| Undergraduate Researcher  &nbsp;&rarr;&nbsp; M.S., University of California San Diego
 {: .block-tip }
 
 > ##### Collaborators
@@ -47,9 +47,9 @@ related_publications: false
 > <br>
 > [**Hossein Shirazi**](https://www.hosseinshirazi.info/), San Diego State University
 > <br>
-> Fateme Hashemi Chaleshtori, M.S., Colorado State University
+> Fateme Hashemi Chaleshtori | M.S. Researcher, Colorado State University &nbsp;&rarr;&nbsp; Ph.D., University of Utah
 > <br>
-> Sina Mahdipour Saravani, M.S., Colorado State University
+> Sina Mahdipour Saravani | M.S. Researcher, Colorado State University &nbsp;&rarr;&nbsp; Ph.D., University of Utah
 {: .block-warning}
 
 ---
@@ -84,13 +84,24 @@ We ventured further into the cross-genre propagation of misinformation and the p
 
 The latter consists of selective reporting, non-disclosure of conflicts of interests, disease-mongering, etc. These manifold attributes make the automatic detection of medical misinformation a daunting challenge, and has so far only been explored by journalists and healthcare professionals in purely qualitative studies. We delved into a significantly more complex multi-class classification task to test whether medical news articles (most of which are not considered "fake" by any existing fact-checking system) actually satisfy criteria deemed important by medical experts and healthcare journalists (as far as misinformation is concerned). We collected a corpus of 1,119 health news paired with systematic reviews, where each review has six criteria essential to the accuracy of medical news. Our experiments compared classical token-based approaches with the more recent transformer-based models, and found that detecting qualitative lapses is an extremely challenging task with direct ramifications in misinformation. Moreover, it is an important direction to pursue beyond assigning True or False labels to short claims {% cite zuo2021empirical %}.
 
-{% cite saravani2021investigation %}
+A related methodological question concerns the computational tools themselves. Figurative language &mdash; sarcasm, irony,
+and indirect assertion &mdash; represents one of the subtlest mechanisms of misleading health communication. We investigated
+whether recently proposed deep learning architectures for figurative language identification deliver on their apparent promise,
+finding that a striking state-of-the-art result on sarcasm detection was not statistically significant under controlled ablation:
+a caution against assuming that architectural complexity translates to genuine generalization {% cite saravani2021investigation %}.
 
-{% cite banerjee2021diagnosis %}
+##### Synthesis
+
+The empirical findings across this project converge on a consistent picture: medical misinformation is not a binary phenomenon
+amenable to simple fact-checking, but a spectrum of transformations ranging from genre shifts to selective reporting to deceptive
+citation, each requiring distinct computational approaches. In a synthesis of these findings, we articulated a broader framework
+for the diagnosis, prevention, and cure of misinformation, arguing that robust solutions must address the full lifecycle of
+information distortion rather than treating individual instances in isolation {% cite banerjee2021diagnosis %}.
 
 ---
 
 #### Publications
+
 > {% reference zuo2018hybrid %}
 > &nbsp;&nbsp;&nbsp;&nbsp;
 > [<i class="fas fa-file-pdf"></i>](/assets/pdf/zuo2018hybrid-clef.pdf)
