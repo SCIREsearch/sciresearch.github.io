@@ -470,7 +470,7 @@ ninja.data = [{
               window.location.href = "/projects/ai-for-healthcare/";
             },},{id: "projects-forensic-linguistics",
           title: 'Forensic Linguistics',
-          description: "Idiolects",
+          description: "Stylometry, authorship attribution, and deceptive signals in digital writing",
           section: "Projects",handler: () => {
               window.location.href = "/projects/forensic-linguistics/";
             },},{id: "projects-network-outage-analysis",
@@ -483,11 +483,16 @@ ninja.data = [{
           description: "2023 - 2025",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nsf-eager-medann-2023/";
-            },},{id: "projects-tracking-semantic-changes-in-medical-information",
-          title: 'Tracking Semantic Changes in Medical Information',
-          description: "2018 - 2022",
+            },},{id: "projects-semantic-drift-in-medical-information",
+          title: 'Semantic Drift in Medical Information',
+          description: "Health misinformation and deceptive support across genres",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nsf-eager-tracking-2018/";
+            },},{id: "projects-pragmatic-language-understanding",
+          title: 'Pragmatic Language Understanding',
+          description: "Non-Gricean discourse as computationally tractable pragmatic acts",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/pragmatic-language-understanding/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
