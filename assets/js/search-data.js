@@ -468,6 +468,16 @@ ninja.data = [{
           description: "2014 - 2015  2022 - 2025",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ai-for-healthcare/";
+            },},{id: "projects-contraceptive-misinformation-on-social-media",
+          title: 'Contraceptive Misinformation on Social Media',
+          description: "Belief-driven distortion of contraceptive narratives across platforms",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/contraceptive-misinformation/";
+            },},{id: "projects-propaganda-fallacies-and-media-integrity",
+          title: 'Propaganda, Fallacies, and Media Integrity',
+          description: "Detecting propaganda and reasoning fallacies in online media",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/fallacies-propaganda-integrity/";
             },},{id: "projects-forensic-linguistics",
           title: 'Forensic Linguistics',
           description: "Stylometry, authorship attribution, and deceptive signals in digital writing",
@@ -478,9 +488,9 @@ ninja.data = [{
           description: "2015",
           section: "Projects",handler: () => {
               window.location.href = "/projects/network-outage-analysis-2015/";
-            },},{id: "projects-investigating-medical-app-data-against-privacy-laws",
-          title: 'Investigating Medical App Data against Privacy Laws',
-          description: "2023 - 2025",
+            },},{id: "projects-investigating-medical-data-against-privacy-laws",
+          title: 'Investigating Medical Data against Privacy Laws',
+          description: "Privacy compliance in health apps and medical information systems",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nsf-eager-medann-2023/";
             },},{id: "projects-semantic-drift-in-medical-information",
