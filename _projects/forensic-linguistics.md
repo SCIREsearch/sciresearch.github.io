@@ -3,7 +3,7 @@ layout: page
 title: Forensic Linguistics # title on the card
 description: Stylometry, authorship attribution, and deceptive signals in digital writing 
 research_area: pragmatic-language
-img: assets/img/project-card-images/forensic-linguistics-card-img-2.svg
+img: assets/img/project-card-images/forensic-linguistics-card-img-3.png
 importance: 6
 category: Research Projects
 related_publications: false

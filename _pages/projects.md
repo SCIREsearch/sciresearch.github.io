@@ -88,11 +88,19 @@ SCIRE's work on information integrity predates the current wave of interest in A
 
 #### Privacy and Regulatory Compliance
 
-Legal and regulatory documents are among the most consequential uses of natural language, yet they remain among the least studied from a computational perspective. Privacy policies, app permission disclosures, and data-use agreements are written in natural language — but they must be evaluated against the formal requirements of laws that vary by jurisdiction, by sector, and by enforcement regime. SCIRE treats this mismatch as a language understanding problem. Our work asks: _does the language of this document do what its authors claim, and does it comply with the legal language it is bound by?_
+Legal and regulatory documents are among the most consequential uses of natural language, yet they remain among the least
+studied from a computational perspective. Privacy policies, app permission disclosures, and data-use agreements are written
+in natural language &mdash; but they must be evaluated against the formal requirements of laws that vary by jurisdiction,
+by sector, and by enforcement regime. Our research treats this mismatch as a language understanding problem, and asks:
+_does the language of this document do what its authors claim, and does it comply with the legal language it is bound by?_
 
-This research operates at two scales. At the application level, we develop NLP models that automatically infer what data a mobile app collects and uses from its textual description and permission declarations, and then test whether that behavior is consistent with what the app actually does [PST 2025]. At the jurisdictional level, we study how privacy laws across multiple nations — from GDPR in Europe to HIPAA in the United States to emerging frameworks in Asia and the Middle East — construct and enforce different notions of data protection, and what those differences mean for globally deployed software and services [CODASPY 2026]. The latter is not merely a legal or policy question: it is a natural language inference problem at scale, because the meaning of "consent," "sensitive data," and "legitimate interest" shifts materially across legal corpora.
-
-This thread of research has received support from the U.S. National Science Foundation under the award <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2335686">CNS-2335686</a>.
+This research operates at two scales. At the application level, we develop NLP models that automatically infer what data a
+mobile app collects and uses from its textual description and permission declarations, and then test whether that behavior
+is consistent with what the app actually does<!-- [PST 2025] -->. At the jurisdictional level, we study how privacy laws across
+multiple nations &mdash; from GDPR in Europe to DPDPA in India &mdash; construct and enforce different notions of data
+protection, and what those differences mean for globally deployed software and services<!-- sharma2026codaspy -->. The
+latter is not merely a legal or policy question: it is a natural language inference problem at scale, because the meanings
+of "consent", "sensitive data", and "legitimate interest" shift materially across legal corpora.
 
 {% assign section_projects = site.projects | where: "research_area", "privacy-compliance" | sort: "importance" %}
 {% if section_projects.size > 0 %}

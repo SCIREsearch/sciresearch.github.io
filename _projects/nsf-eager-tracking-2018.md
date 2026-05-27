@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Semantic Drift in Medical Information # title on the card
-heading: Tracking Semantic Changes in Medical Information # project page hading (needed for sponsor image)
+heading: Semantic Drift in Medical Information # project page hading (needed for sponsor image)
 description: Health misinformation and deceptive support across genres
 research_area: trustworthy-ai
 img: assets/img/tracking-project-card-img.png
@@ -11,35 +11,32 @@ category: Research Projects
 related_publications: false
 ---
 
+> <div class="project-sponsor">
+> This research is funded by the <strong>Secure & Trustworthy Cyberspace (SaTC)</strong> program of the  <strong>U.S. National Science Foundation (NSF)</strong>.
+> </div>
+> <div class="project-sponsor">
+>    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1834597">SES-1834597</a>
+>    (05.2018 - 03.2022)
+> </div>
+{: .block-preferences }
+
 ---
 
-<h6 class="project-sponsor">This research is funded by the <strong>Secure & Trustworthy Cyberspace (SaTC)</strong> program of the  <strong>U.S. National Science Foundation (NSF)</strong></h6>
-<h6 class="project-sponsor">
-  <span style="font-weight: 400; font-size: 0.8rem;">
-    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1834597">SES-1834597</a>
-  </span>
-  <span style="font-weight: 800;">&nbsp;|&nbsp;</span>
-  <span style="font-weight: 400; font-size: 0.8rem;">
-    05.2018 - 03.2022
-  </span>
-</h6>
-
-
-> [**Ritwik Banerjee**](https://www.ritwikbanerjee.com) \| Principal Investigator
+> [**Ritwik Banerjee**](https://www.ritwikbanerjee.com), Principal Investigator
 > <br>
-> Chaoyuan Zuo | Doctoral Researcher &nbsp;&rarr;&nbsp;  Lecturer (tenure-track), School of Journalism & Communication, Nankai University
+> &emsp; Chaoyuan Zuo, Doctoral Researcher &nbsp;&rarr;&nbsp;  Lecturer (tenure-track), School of Journalism & Communication, Nankai University
 > <br>
-> Noushin Salek Faramarzi | Doctoral Researcher &nbsp;&rarr;&nbsp; NLP Researcher, Boeing AI
+> &emsp; Noushin Salek Faramarzi, Doctoral Researcher &nbsp;&rarr;&nbsp; NLP Researcher, Boeing AI
 > <br>
-> Kritik Mathur | M.S. Researcher &nbsp;&rarr;&nbsp; Software Engineer, Amazon
+> &emsp; Kritik Mathur, M.S. Researcher &nbsp;&rarr;&nbsp; Software Engineer, Amazon
 > <br>
-> Dhruv Kela | M.S. Researcher &nbsp;&rarr;&nbsp; Software Engineer, DigitalOcean
+> &emsp; Dhruv Kela, M.S. Researcher &nbsp;&rarr;&nbsp; Software Engineer, DigitalOcean
 > <br>
-> Narayan Acharya | M.S. Researcher &nbsp;&rarr;&nbsp; Research Engineer, dMetrics, Inc.
+> &emsp; Narayan Acharya, M.S. Researcher &nbsp;&rarr;&nbsp; Research Engineer, dMetrics, Inc.
 > <br>
-> Ayla Karakas \| Undergraduate Researcher (Linguistics) &nbsp;&rarr;&nbsp; Ph.D., Computational Linguistics, Yale University
+> &emsp; Ayla Ida Karakaş, Undergraduate Researcher (Linguistics) &nbsp;&rarr;&nbsp; Ph.D., Computational Linguistics, Yale University
 > <br>
-> Qi Zhang \| Undergraduate Researcher  &nbsp;&rarr;&nbsp; M.S., University of California San Diego
+> &emsp; Qi Zhang, Undergraduate Researcher  &nbsp;&rarr;&nbsp; M.S., University of California San Diego
 {: .block-tip }
 
 > ##### Collaborators
@@ -47,9 +44,9 @@ related_publications: false
 > <br>
 > [**Hossein Shirazi**](https://www.hosseinshirazi.info/), San Diego State University
 > <br>
-> Fateme Hashemi Chaleshtori | M.S. Researcher, Colorado State University &nbsp;&rarr;&nbsp; Ph.D., University of Utah
+> &emsp; Fateme Hashemi Chaleshtori,  M.S. Researcher, Colorado State University &nbsp;&rarr;&nbsp; Ph.D., University of Utah
 > <br>
-> Sina Mahdipour Saravani | M.S. Researcher, Colorado State University &nbsp;&rarr;&nbsp; Ph.D., University of Utah
+> &emsp; Sina Mahdipour Saravani,  M.S. Researcher, Colorado State University &nbsp;&rarr;&nbsp; Ph.D., University of Utah
 {: .block-warning}
 
 ---

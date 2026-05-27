@@ -4,7 +4,7 @@ title: Pragmatic Language Understanding
 heading: Pragmatic Language Understanding
 description: Non-Gricean discourse as computationally tractable pragmatic acts
 research_area: pragmatic-language
-img: assets/img/project-card-images/pragmatic-language-card-img.svg
+img: assets/img/project-card-images/pragmatic-language-understanding-card-img-2.png
 sponsor_imgs:
   - assets/img/nsf-logo.png
   - assets/img/ai3_logo.png
@@ -13,9 +13,8 @@ category: Research Projects
 related_publications: false
 ---
 
----
-
-> <div class="project-sponsor">This research has been supported in part by the <strong>Secure & Trustworthy Cyberspace (SaTC)</strong> program of the <strong>U.S. National Science Foundation (NSF)</strong> and the <strong>AI Innovation Institute</strong> at Stony Brook University.
+> <div class="project-sponsor">
+>   This research has been supported in part by the <strong>Secure & Trustworthy Cyberspace (SaTC)</strong> program of the <strong>U.S. National Science Foundation (NSF)</strong> and the <strong>AI Innovation Institute (AI3)</strong> at Stony Brook University.
 > </div>
 > <div class="project-sponsor">
 >    <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=1834597">SES-1834597</a>
@@ -24,22 +23,24 @@ related_publications: false
 >    <a href="https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2335686">CNS-2335686</a>
 >    (10.2023 - 09.2025)
 >  <span style="font-weight: 700;">&nbsp;|&nbsp;</span>
->    <a href="https://www.stonybrook.edu/commcms/provost/about/_communications/_2025_ai_seed_grant_winners.php">AI Seed Grant</a>
+>    <a href="https://www.stonybrook.edu/commcms/provost/about/_communications/_2025_ai_seed_grant_winners.php">AI3 Seed Grant</a>
 >    (01.2025 - 06.2026)
 > </div>
-{: .block-references }
+{: .block-preferences }
 
-> [**Ritwik Banerjee**](https://www.ritwikbanerjee.com) \| Principal Investigator <br>
-> Chenlu Wang \| Doctoral Researcher &nbsp;&rarr;&nbsp; Research Scientist, Meta <br>
-> Khiem Phi  \| Doctoral Researcher <br>
-> Noushin Salek Faramarzi \| Doctoral Researcher &nbsp;&rarr;&nbsp; NLP Researcher, Boeing AI <br>
-> Weimin Lyu \| Doctoral Researcher &nbsp;&rarr;&nbsp; Applied Scientist, Amazon 
+---
+
+> [**Ritwik Banerjee**](https://www.ritwikbanerjee.com), Principal Investigator <br>
+> &emsp; Chenlu Wang, Doctoral Researcher &nbsp;&rarr;&nbsp; Research Scientist, Meta <br>
+> &emsp; Khiem Phi, Doctoral Researcher <br>
+> &emsp; Noushin Salek Faramarzi, Doctoral Researcher &nbsp;&rarr;&nbsp; NLP Researcher, Boeing AI <br>
+> &emsp; Weimin Lyu, Doctoral Researcher &nbsp;&rarr;&nbsp; Applied Scientist, Amazon 
 {: .block-tip}
 
 ##### Collaborators
-> [**Indrakshi Ray**](https://www.cs.colostate.edu/~iray) \| Professor of Computer Science, Colorado State University at Fort Collins
+> [**Indrakshi Ray**](https://www.cs.colostate.edu/~iray), Professor of Computer Science, Colorado State University at Fort Collins
 > <br>
-> Sina Mahdipour Saravani \| M.S. Researcher, Colorado State University &nbsp;&rarr;&nbsp; Ph.D. Student, University of Utah
+> &emsp; Sina Mahdipour Saravani, M.S. Researcher, Colorado State University &nbsp;&rarr;&nbsp; Ph.D. Student, University of Utah
 {: .block-warning}
 
 ---
