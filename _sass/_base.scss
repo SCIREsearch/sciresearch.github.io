@@ -220,12 +220,12 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
 
   .more-info {
+    margin-top: 1rem;
     margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
 
     p {
-      display: inline-block;
+      font-size: 0.85rem;
+      text-align: center;
       margin: 0;
     }
   }

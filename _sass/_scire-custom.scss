@@ -255,3 +255,144 @@
   height: auto;
   object-fit: contain;
 }
+
+// Profile
+
+.profile {
+  width: 100%;
+
+  .more-info {
+    margin-top: 1rem;
+    margin-bottom: 5px; 
+
+    p {  
+      font-size: 0.85rem;
+      text-align: center;
+      margin: 0;
+    }    
+  }
+}
+
+.profile.float-right {
+  margin-left: 3rem;
+}
+
+.profile.float-left {
+  margin-right: 3rem;
+}
+
+@media (min-width: 576px) {
+  .profile {
+    width: 30%; 
+
+    .address {
+      p {  
+        display: block;
+      }    
+    }    
+  }
+}
+
+// Blocks
+blockquote {
+  background: var(--global-bg-color);
+  border-left: 5px solid var(--global-theme-color);
+  margin: 1.5em 0;
+  padding: 1em; 
+  font-size: 0.9rem;
+
+  p {  
+    margin-bottom: 0;
+  }
+
+  /* Tips, warnings, and dangers blockquotes */
+  &.block-extramural-grant {
+    font-size: 0.9rem;
+    border-color: var(--global-tip-block);
+    background-color: var(--global-tip-block-bg);
+
+    em,  
+    li,  
+    p,   
+    strong {
+      color: var(--global-tip-block-text);
+    }    
+
+    h1,  
+    h2,  
+    h3,  
+    h4,  
+    h5,  
+    h6 { 
+      color: var(--global-tip-block-title);
+    }    
+  }
+
+  &.block-references {
+    font-size: 0.8rem;
+    border-color: $indianred-color;
+  }
+
+  &.block-foundation-grant {
+    font-size: 0.9rem;
+    border-color: var(--global-warning-block);
+    background-color: var(--global-warning-block-bg);
+
+    em,  
+    li,  
+    p,   
+    strong {
+      color: var(--global-warning-block-text);
+    }    
+
+    h1,  
+    h2,  
+    h3,  
+    h4,  
+    h5,  
+    h6 { 
+      color: var(--global-warning-block-title);
+    }    
+  }
+
+  &.block-intramural-grant {
+    font-size: 0.9rem;
+
+    em,  
+    li,  
+    p,   
+    strong {
+      color: var(--global-warning-block-text);
+    }    
+
+    h1,  
+    h2,  
+    h3,  
+    h4,  
+    h5,  
+    h6 { 
+      color: var(--global-warning-block-title);
+    }    
+  }
+
+  &.block-danger {
+    border-color: var(--global-danger-block);
+    background-color: var(--global-danger-block-bg);
+
+    em,
+    li,
+    p,
+    strong {
+      color: var(--global-danger-block-text);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--global-danger-block-title);
+    }
+  }
+}

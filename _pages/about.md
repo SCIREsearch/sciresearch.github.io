@@ -2,63 +2,79 @@
 layout: about
 title: Mission
 permalink: /
-subtitle: COMPUTATIONAL LINGUISTICS &nbsp; | &nbsp; MACHINE LEARNING &nbsp; | &nbsp; SOCIOLOGY &nbsp; | &nbsp; PSYCHOLOGY &nbsp; | &nbsp; ARTIFICIAL INTELLIGENCE
-
-#profile:
-#  align: right
-#  image: rb-profile-pic.png
-#  image_circular: true # crops the image to make it circular
-#  more_info: >
-#    <a href="https://www.ritwikbanerjee.com/">Dr. Ritwik Banerjee</a>
-#    <p>Lead, SCIRE Group</p>
-#    <p><a href="mailto:rbanerjee@cs.stonybrook.edu"><i class="fas fa-envelope"></i>rbanerjee@cs.stonybrook.edu</a></p>
-#    <p>
-#      <span style="font-size: 0.8rem;">
-#        206 New Computer Science</br>
-#        100 Engineering Drive</br>
-#        Stony Brook, New York
-#      </span>
-#    </p>
-                                        
-
+subtitle: Where Computational Linguistics, Machine Learning, Sociology, and Communication come together to build the next generation of Human-Centered AI
+# subtitle: COMPUTATIONAL LINGUISTICS &nbsp; | &nbsp; MACHINE LEARNING &nbsp; | &nbsp; SOCIOLOGY &nbsp; | &nbsp; PSYCHOLOGY &nbsp; | &nbsp; ARTIFICIAL INTELLIGENCE
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
-
 announcements:
   enabled: true # includes a list of news items
   scrollable: false # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
-
 # latest_posts:
   # enabled: false
   # scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   # limit: 3 # leave blank to include all the blog posts
 ---
 
-<p style="margin-bottom: 16px;">&nbsp;</p>
+<div class="scire-strip-wrap">
+  <div class="scire-stats">
+    <div class="scire-stat">
+      <span class="scire-stat-value">$1.059M</span>
+      <span class="scire-stat-label">in research funding</span>
+    </div>
+    <div class="scire-stat">
+      <span class="scire-stat-value">4</span>
+      <span class="scire-stat-label">doctoral researchers</span>
+    </div>
+    <div class="scire-stat">
+      <span class="scire-stat-value">43</span>
+      <span class="scire-stat-label">M.S. students</span>
+    </div>
+    <div class="scire-stat">
+      <span class="scire-stat-value">1</span>
+      <span class="scire-stat-label">open dataset resource</span>
+    </div>
+    <div class="scire-stat">
+      <span class="scire-stat-value">3</span>
+      <span class="scire-stat-label">collaborating universities</span>
+    </div>
+  </div>
+  <div class="scire-collab-footer">
+    <span class="scire-collab-label">Collaborating universities —</span>
+    <span class="scire-collab-name">New Jersey Institute of Technology</span>
+    <span class="scire-collab-sep">·</span>
+    <span class="scire-collab-name">Colorado State University, Fort Collins</span>
+    <span class="scire-collab-sep">·</span>
+    <span class="scire-collab-name">University of Calgary</span>
+  </div>
+  <div class="scire-collab-footer scire-ug-footer">
+    <span class="scire-collab-label">+ 22 undergraduate researchers from Computer Science, Linguistics, and Psychology.</span>
+  </div>
+  <br>
+  <p class="scire-highlight">Student involvement in research is a core value of our group at SCIRE. Of the M.S. and undergraduate students who have worked in our group, <b>19</b> have co-authored peer-reviewed publications at venues including ACL, EMNLP, IEEE ICHI, and others.</p>
+</div>
+
+<!-- p style="margin-bottom: 16px;">&nbsp;</p -->
 
 <div class="profile float-right">
-  <h3>&nbsp;</h3>
   <img src="/assets/img/rb-profile-pic.png" 
        class="img-fluid z-depth-1 rounded-circle" 
        alt="Ritwik Banerjee">
   <div class="more-info">
     <p><strong><a href="https://www.ritwikbanerjee.com/">Dr. Ritwik Banerjee</a></strong></p>
-    <p>Lead, SCIRE Group</p>
+    <p>Principal Investigator, SCIRE Group</p>
     <p>
       <a href="mailto:rbanerjee@cs.stonybrook.edu">
         <i class="fas fa-envelope"></i> rbanerjee@cs.stonybrook.edu
       </a>
     </p>
-    <p style="font-size: 0.75rem;">
+    <p>
       206 New Computer Science<br>
       100 Engineering Drive<br>
       Stony Brook, New York
     </p>
   </div>
 </div>
-
-### OUR MISSION
 
 **SCIRE** (Latin: "to know") explores and advances the frontiers of computational linguistics and its applications in
 contemporary society, designing and developing machine learning algorithms and models that promise unprecedented

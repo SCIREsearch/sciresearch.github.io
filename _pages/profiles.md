@@ -4,7 +4,7 @@ permalink: /people/
 title: People
 description: Members of the Social & Computational Intelligence Research (SCIRE) Group
 nav: true
-nav_order: 4
+nav_order: 3
 
 profiles:
   - content: people/header-pi.md

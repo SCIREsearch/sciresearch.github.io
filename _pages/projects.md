@@ -14,7 +14,7 @@ Our research develops the computational and theoretical machinery to make pragma
 <div class="scire-strip-wrap">
   <div class="scire-stats">
     <div class="scire-stat">
-      <span class="scire-stat-value">$1.19M</span>
+      <span class="scire-stat-value">$1.059M</span>
       <span class="scire-stat-label">in research funding</span>
     </div>
     <div class="scire-stat">
