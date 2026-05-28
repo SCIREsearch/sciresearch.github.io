@@ -12,7 +12,7 @@ related_publications: false
 ---
 
 > <div class="project-sponsor">
-> This research is funded by the <strong>Secure & Trustworthy Cyberspace (SaTC)</strong> program of the  <strong>U.S. National Science Foundation (NSF)</strong>.
+> This research has been supported by the <strong>Secure & Trustworthy Cyberspace (SaTC)</strong> program of the  <strong>U.S. National Science Foundation (NSF)</strong>.
 > </div>
 > <div class="project-sponsor">
 >    <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1834597">SES-1834597</a>
@@ -69,6 +69,12 @@ As a first step in this direction, we focused on identifying what information is
 
 Next, we looked into how healthcare information is first presented in research literature, and then in newswires for general readership. We developed a novel dataset of 5,034 news articles paired with the research abstracts of the work being mentioned, and explored how to identify identical or near-identical content expressed in vastly different syntax and vocabulary. For this, we took a two-step approach: (1) select the most relevant candidates from a collection of 222,000 research abstracts, and (2) re-rank this list of most relevant candidates. We compared the classical approach of information retrieval (IR) using BM25 with more recent transformer-based models, and find that cross-genre medical IR is a viable task, but incorporating domain-specific knowledge is crucial for its success {% cite zuo2020querying %}.
 
+As a natural continuation of this thread of our research, our cross-genre retrieval framework has
+since been extended across language boundaries. We present an ad hoc information retrieval task
+for verifying Chinese health claims from news sources against English biomedical literature,
+demonstrating that domain-specific retrieval significantly enhances claim verification efficacy in
+this challenging cross-lingual setting {% cite zuo2024from %}.
+
 Through the course of this project, we observed that the complex nature of medical misinformation can be attributed largely to two phenomena. First, (mis)information propagates across multiple distinct genres &mdash; from research literature to newswires to social media, where each genre has its own linguistic properties and pragmatic hurdles to overcome. Second, a large amount of information amounts to paltering, or what is often called "less than lying". We have pursued scientific investigations in both directions.
 
 ##### (Mis)information propagation across genres
@@ -97,8 +103,12 @@ information distortion rather than treating individual instances in isolation {%
 
 ---
 
-#### Publications
+##### Publications
 
+> {% reference zuo2024from %}
+> &nbsp;&nbsp;&nbsp;&nbsp;
+> [<i class="fas fa-file-pdf"></i>](/assets/pdf/zuo2024from-nlpcc.pdf)
+> <br><br>
 > {% reference zuo2018hybrid %}
 > &nbsp;&nbsp;&nbsp;&nbsp;
 > [<i class="fas fa-file-pdf"></i>](/assets/pdf/zuo2018hybrid-clef.pdf)

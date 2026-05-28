@@ -118,12 +118,16 @@ of "consent", "sensitive data", and "legitimate interest" shift materially acros
 
 #### Biomedical NLP and Healthcare AI
 
-The single largest gap in modern healthcare is not the absence of medical knowledge — it is the inability to access, interpret, and act on knowledge that already exists, buried in clinical notes, radiology reports, research literature, and patient records that were written for human readers and remain largely inaccessible to automated systems. SCIRE's work in biomedical NLP addresses this gap directly. Our central concern is the _translational problem_: how to move actionable knowledge from the language in which it is recorded to the clinical and research decisions it should inform.
-
-This research has proceeded along two parallel tracks. The first concerns knowledge extraction from clinical text: identifying adverse drug events from electronic health records [ICHI 2014 and ICHI 2015 Best Paper], extracting and contextualizing medication events from unstructured clinical notes [ClinicalNLP 2023], and correlating radiological imaging language with disease diagnosis [Renal Failure 2025]. The second track concerns cross-genre medical claim verification: the same health claim — about a drug, a treatment, a risk — appears across news articles, patient forums, scientific abstracts, and clinical guidelines, and means something different in each. Our work on querying and retrieving medical claims across these genres [EMNLP 2020] and on large-scale biomedical expert finding for claim verification [BIBM 2025] addresses the practical challenge that automated health claim systems must face: the genre of a claim's source is not incidental to its credibility.
-
-This research is conducted in close collaboration with clinicians and medical researchers at Stony Brook University School of Medicine.
-
+Much of the knowledge that could improve patient outcomes already exists &mdash; in clinical notes,
+imaging reports, medication records, and research literature written for human readers and largely
+inaccessible to automated systems. The central challenge is not producing more data, but extracting
+actionable insights from the language in which clinical data lives, reliably enough to inform patient
+care at scale. Our work in this area is pursued under the umbrella of CLAP (Computational Linguistics
+and AI for Patients) since 2014, and spans patient-centered AI for adverse drug event detection,
+clinical note analysis, medication event extraction, radiology report summarization, and kidney
+ultrasound interpretation for chronic kidney disease risk prediction. This research is conducted in
+close collaboration with clinicians and medical researchers at the Renaissance School of Medicine in
+Stony Brook University.
 
 {% assign section_projects = site.projects | where: "research_area", "biomedical-nlp" | sort: "importance" %}
 {% if section_projects.size > 0 %}
@@ -139,6 +143,13 @@ This research is conducted in close collaboration with clinicians and medical re
 {% endif %}
 
 
-#### Socially-Grounded AI
-
-Across all of this research, we treat language comprehension as a fundamentally social act. Meaning is not a property of a text alone &mdash; it emerges from the creator's intent, the audience's expectations, and the broader socio-economic context in which both are situated. This framing commits us to something important: building AI systems that are not merely accurate in the statistical sense, but that are _interpretable_ in terms of the social dynamics they model. We work at the intersection of computational linguistics, machine learning, sociology, and psychology not because breadth is an end in itself, but because the problems we care about cannot be solved from within any one of these disciplines alone.
+> **Socially-Grounded AI**
+> <br>
+> Across all of this research, we treat language comprehension as a fundamentally social act. Meaning is not
+> a property of a text alone &mdash; it emerges from the creator's intent, the audience's expectations, and
+> the broader socio-economic context in which both are situated. This framing commits us to something important:
+> building AI systems that are not merely accurate in the statistical sense, but that are _interpretable_ in
+> terms of the social dynamics they model. We work at the intersection of computational linguistics, machine
+> learning, sociology, and psychology not because breadth is an end in itself, but because the problems we care
+> about cannot be solved from within any one of these disciplines alone.
+{: .block-tip}

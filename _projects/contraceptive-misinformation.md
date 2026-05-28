@@ -12,7 +12,7 @@ related_publications: false
 ---
 
 > <div class="project-sponsor">
->   This research is funded by the <strong>Society for Family Planning</strong>.
+> This research is supported by the <strong>Society for Family Planning</strong>.
 > </div>
 > <div class="project-sponsor">
 >    <a href="https://societyfp.org/awarded_grants/sfp19-mdi2/">SPF19-MDI2</a>

@@ -12,7 +12,7 @@ related_publications: false
 ---
 
 > <div class="project-sponsor">
-> This research is funded by the <strong>Secure &amp; Trustworthy Cyberspace (SaTC)</strong> program of the <strong>U.S. National Science Foundation (NSF)</strong>
+> This research has been supported in part by the <strong>Secure &amp; Trustworthy Cyberspace (SaTC)</strong> program of the <strong>U.S. National Science Foundation (NSF)</strong>
 > </div>
 > <div class="project-sponsor">
 >   <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2335686">CNS-2335686</a>
