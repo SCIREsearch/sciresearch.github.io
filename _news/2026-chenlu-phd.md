@@ -6,6 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Chenlu Wang defends her Ph.D. on *Pragmatic Language Understanding and Information Integrity*
-&nbsp;&rArr;&nbsp;
-Research Scientist @ Meta.
+Chenlu Wang defends her Ph.D. on [Pragmatic Language Understanding and Information Integrity](https://www.cs.stonybrook.edu/phd-thesis-defense-pragmatic-language-understanding-and-information-integrity). **Dr. Wang will begin her next chapter as a Research Scientist at Meta.**.

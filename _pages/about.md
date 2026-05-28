@@ -54,19 +54,18 @@ announcements:
   <p class="scire-highlight">Student involvement in research is a core value of our group at SCIRE. Of the M.S. and undergraduate students who have worked in our group, <b>19</b> have co-authored peer-reviewed publications at venues including ACL, EMNLP, IEEE ICHI, and others.</p>
 </div>
 
-<!-- p style="margin-bottom: 16px;">&nbsp;</p -->
-
 <div class="profile float-right">
   <img src="/assets/img/rb-profile-pic.png" 
        class="img-fluid z-depth-1 rounded-circle" 
        alt="Ritwik Banerjee">
   <div class="more-info">
-    <p><strong><a href="https://www.ritwikbanerjee.com/">Dr. Ritwik Banerjee</a></strong></p>
+    <p>
+      <strong><a href="https://www.ritwikbanerjee.com/">Dr. Ritwik Banerjee</a></strong>
+      &emsp;
+      <a href="mailto:rbanerjee@cs.stonybrook.edu"><i class="fas fa-envelope"></i></a>
+    </p>
     <p>Principal Investigator, SCIRE Group</p>
     <p>
-      <a href="mailto:rbanerjee@cs.stonybrook.edu">
-        <i class="fas fa-envelope"></i> rbanerjee@cs.stonybrook.edu
-      </a>
     </p>
     <p>
       206 New Computer Science<br>

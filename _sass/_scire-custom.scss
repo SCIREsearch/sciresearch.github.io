@@ -1,3 +1,8 @@
+// --- Font base size (the default is 16px, and that's too large) ---
+html {
+  font-size: 14px;
+}
+
 // --- For proper gap just before a research section ---
 .projects + h4 {
   margin-top: 1rem;
@@ -395,4 +400,27 @@ blockquote {
       color: var(--global-danger-block-title);
     }
   }
+}
+
+// --- For bibliography ---
+.publications ol.bibliography li .author > em {
+  border-bottom: none;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.publications ol.bibliography li .title {
+  font-weight: 700;
+}
+
+.badge-acceptance {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+  opacity: 0.65;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-left: 0.4rem;
+  white-space: nowrap;
 }

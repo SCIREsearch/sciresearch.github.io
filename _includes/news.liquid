@@ -15,7 +15,7 @@
           {% assign news_limit = news_size %}
         {% endif %}
         {% for item in news limit: news_limit %}
-          <tr style="line-height: 1.2;">
+          <tr style="line-height: 1.5;">
             <th scope="row" style="width: 10%; font-weight: lighter; color: #6c757d; padding: 0.25rem 0.1rem;">{{ item.date | date: '%m.%Y.' }}</th>
             <td style="padding: 0.25rem 0.5rem;">
              <!-- News type badge -->
