@@ -463,9 +463,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-multilingual-english-russian-and-mandarin-chinese-multinational-usa-uk-ukraine-russia-and-china-and-logitudinal-31-months-dataset-on-the-russo-ukrainian-war-lrec-2026",
           title: 'Our multilingual (English, Russian, and Mandarin Chinese), multinational (USA, UK, Ukraine, Russia, and...',
           description: "",
-          section: "News",},{id: "projects-cl4phealth-clinical-language-processing-for-healthcare",
-          title: 'CL4PHealth | Clinical Language Processing for Healthcare',
-          description: "2014 - 2015  2022 - 2025",
+          section: "News",},{id: "projects-clap",
+          title: 'CLAP',
+          description: "Computational Linguistics and AI for Patients",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ai-for-healthcare/";
             },},{id: "projects-contraceptive-misinformation-on-social-media",
