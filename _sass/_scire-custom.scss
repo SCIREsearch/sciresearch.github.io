@@ -332,6 +332,30 @@ blockquote {
     }    
   }
 
+  &.block-collaborators-contact {
+    font-size: 0.9rem;
+    border-color: $indianred-color;
+    h1, h2, h3, h4, h5, h6 { color: $indianred-color; }
+  }
+
+  &.block-postdoc-contact {
+    font-size: 0.9rem;
+    border-color: $cyan-color;
+    h1, h2, h3, h4, h5, h6 { color: $cyan-color; }
+  }
+
+  &.block-prospectivephd-contant {
+    font-size: 0.9rem;
+    border-color: $orange-color;
+    h1, h2, h3, h4, h5, h6 { color: $orange-color; }
+  }
+
+  &.block-current-contact {
+    font-size: 0.9rem;
+    border-color: $light-purple-color;
+    h1, h2, h3, h4, h5, h6 { color: $light-purple-color; }
+  }
+
   &.block-references {
     font-size: 0.8rem;
     border-color: $indianred-color;
