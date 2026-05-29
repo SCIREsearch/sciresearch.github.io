@@ -413,14 +413,147 @@ blockquote {
   font-weight: 700;
 }
 
-.badge-acceptance {
+.acceptance-abbr {
+  margin-top: 0.4rem;
+
+  .badge-acceptance {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--global-text-color-light);
+    border: 1px solid var(--global-theme-color);
+    margin-left: 0;
+    white-space: normal;
+    display: block;
+    text-align: center;
+  }
+}
+
+// --- Datasets page ---
+.ds-card {
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+  background: var(--global-card-bg-color);
+}
+
+.ds-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.ds-badge {
+  display: inline-block;
+  background: var(--global-theme-color);
+  color: var(--global-card-bg-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 2px 9px;
+  border-radius: 3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ds-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.ds-utility {
+  font-size: 1rem;
+  // font-style: italic;
+  color: var(--global-text-color);
+  opacity: 0.8;
+  margin: 0.5rem 0 0.75rem;
+  line-height: 1.55;
+}
+
+.ds-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.ds-pill {
+  font-size: 0.85rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 99px;
+  padding: 2px 10px;
+  color: var(--global-text-color);
+  opacity: 0.75;
+}
+
+.ds-attr {
+  font-size: 0.85rem;
+  color: var(--global-text-color);
+  opacity: 0.55;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.ds-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.ds-btn {
   font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--global-text-color-light);
-  opacity: 0.65;
+  padding: 3px 10px;
   border: 1px solid var(--global-divider-color);
   border-radius: 4px;
-  padding: 1px 6px;
-  margin-left: 0.4rem;
-  white-space: nowrap;
+  color: var(--global-text-color);
+  background: transparent;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.15s, border-color 0.15s;
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+.ds-details {
+  margin-top: 0.75rem;
+
+  summary {
+    font-size: 0.85rem;
+    color: var(--global-text-color);
+    opacity: 0.55;
+    cursor: pointer;
+    list-style: none;
+
+    &:hover {
+      opacity: 1;
+      color: var(--global-theme-color);
+    }
+
+    &::-webkit-details-marker { display: none; }
+  }
+}
+
+.ds-pre {
+  font-size: 0.75rem;
+  margin: 0.5rem 0 0;
+  padding: 0.75rem;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  color: var(--global-text-color);
+  overflow-x: auto;
+  line-height: 1.55;
 }

@@ -1,27 +1,31 @@
-"BIBM":
-  url: https://ieeebibm.org/
-  color: "#00629b"
-
 "ACL":
   url: https://aclanthology.org/venues/acl/
-  color: "#f26522"
+  color: "#D66037"
 
 "EMNLP":
   url: https://aclanthology.org/venues/emnlp/
-  color: "#c41e3a"
+  color: "#D66037"
 
 "LREC":
   url: https://www.elra.info/elra-events/lrec/
-  color: "#1565c0"
+  color: "#D66037"
+
+"WebConf":
+  url: https://dl.acm.org/conference/thewebconf
+  color: "#D66037"
 
 "CODASPY":
   url: https://dl.acm.org/conference/codaspy
-  color: "#2e7d32"
+  color: "#6EA53A"
 
 "PST":
   url: https://pstnet.ca/
-  color: "#6a1b9a"
+  color: "#6EA53A"
+
+"BIBM":
+  url: https://ieeebibm.org/
+  color: "#EE9D3B"
 
 "ICHI":
   url: https://www.computer.org/csdl/proceedings/1803080
-  color: "#0277bd"
+  color: "#EE9D3B"

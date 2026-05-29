@@ -11,7 +11,7 @@ Language is more than a tool for description &mdash; it persuades and promulgate
 
 Our research develops the computational and theoretical machinery to make pragmatic language analysis tractable and consequential. We work across four interconnected areas — <span style="color: #3A5C7F; font-weight: 700;">pragmatic language analysis</span>, <span style="color: #D66037; font-weight: 700;">trustworthy AI and information integrity</span>, <span style="color: #6EA53A; font-weight: 700;">privacy and regulatory compliance</span>, and <span style="color: #EE9D3B; font-weight: 700;">biomedical NLP and healthcare AI</span> &mdash; united by the conviction that the most important AI systems are those designed to support socially-embedded, trustworthy decision-making rather than to optimize narrowly for benchmark performance.
 
-<div class="scire-strip-wrap">
+<!-- div class="scire-strip-wrap">
   <div class="scire-stats">
     <div class="scire-stat">
       <span class="scire-stat-value">$1.059M</span>
@@ -47,7 +47,7 @@ Our research develops the computational and theoretical machinery to make pragma
   </div>
   <br>
   <p class="scire-highlight">Student involvement in research is a core value of our group at SCIRE. Of the M.S. and undergraduate students who have worked in our group, <b>19</b> have co-authored peer-reviewed publications at venues including ACL, EMNLP, IEEE ICHI, and others.</p>
-</div>
+</div -->
 
 
 #### Pragmatic Language Analysis

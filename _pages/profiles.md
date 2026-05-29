@@ -21,7 +21,7 @@ profiles:
     linkedin: ritwikbanerjee
     location: New Computer Science, 100 Engineering Drive, Stony Brook
     bio: >
-      Ritwik Banerjee leads the SCIRE Group in the Department of Computer Science at Stony Brook University, where his research develops computational methods for understanding language beyond its literal meaning -- including argumentation, misinformation, and narrative manipulation. His research has been funded by the NSF (the SaTC program and the CNS division), the Society for Family Planning, the AI Innovation Institute, and Broadridge Financial Solutions, Inc. He has produced over 30 peer-reviewed publications, and advised three PhD students to completion, with alumni now at Meta, Boeing AI, and Nankai University.
+      Ritwik Banerjee leads the SCIRE Group in the Department of Computer Science at Stony Brook University, where his research develops computational methods for understanding language beyond its literal meaning -- including argumentation, misinformation, and narrative manipulation. His research has been funded by the NSF (the SaTC program and the CNS division), the Society for Family Planning, the AI Innovation Institute, and Broadridge Financial Solutions, Inc. He has produced over 30 peer-reviewed publications, and advised three PhD students to completion, with alumni now at Meta (2026), Boeing AI (2024), and Nankai University (2021).
 
   - content: people/header-phd-current.md
 
@@ -38,30 +38,33 @@ profiles:
   - content: people/header-phd-alumni.md
 
   - name: Chenlu Wang
-    position: Research Scientist, Meta
+    position: Research Scientist, Meta &bull; Ph.D. 2026
     url: /people/chenlu-wang/
     scholar: IzhsuogAAAAJ
     github: chenlu49
     bio: >
-      Chenlu Wang was a Ph.D. researcher at the SCIRE Group from August 2021 to January 2026. Her doctoral research was on natural language pragmatics, cross-genre and cross-lingual information retrieval, and manifold-sensitive loss functions.
+      Chenlu Wang was a Ph.D. researcher at the SCIRE Group from August 2021 to January 2026. Her doctoral research was on natural language pragmatics, cross-genre and cross-lingual information retrieval, and manifold-sensitive loss functions.<br><br>
+      Doctoral Thesis: <a href="https://www.cs.stonybrook.edu/phd-thesis-defense-pragmatic-language-understanding-and-information-integrity">Pragmatic Language Understanding and Information Integrity</a>
 
   - name: Noushin Salek Faramarzi
-    position: NLP Researcher, Boeing AI
+    position: NLP Researcher, Boeing AI &bull; Ph.D. 2024
     image: noushin.jpg
     url: /people/noushin-faramarzi/
     scholar: Cf202OUAAAAJ
     bio: >
-      Noushin Salek Faramarzi was a Ph.D researcher at the SCIRE Group from January 2019 to April 2024. Her research focused on computational models of health-related misinformation.
+      Noushin Salek Faramarzi was a Ph.D researcher at the SCIRE Group from January 2019 to April 2024. Her research focused on computational models of health-related misinformation.<br><br>
+      Doctoral Thesis: <a href="https://www.proquest.com/openview/1d35440f6dec4597e4da545437d24820/">From Clinical Notes to Online Content: Computational Models for Extracting Insights and Understanding Misinformation</a>
 
   - name: Chaoyuan Zuo
-    position: Tenure-Track Faculty, Nankai University
+    position: Tenure-Track Faculty, Nankai University &bull; Ph.D. 2021
     image: chaoyuan-zuo.png
     url: /people/chaoyuan-zuo/
     website: 
     scholar: tzVKWvMAAAAJ
     github: chzuo
     bio: >
-      Chaoyuan Zuo was the leading Ph.D. researcher and the first student mentored by Ritwik Banerjee. Between May 2017 and October 2021, she conducted ground-breaking research on cross-genre misinformation and the perception of trust in traditional and social media.
+      Chaoyuan Zuo was a Ph.D. researcher at the SCIRE Group from May 2017 to October 2021. Her doctoral research developed computational approaches to cross-genre information retrieval and misinformation detection, with a focus on how health claims propagate and transform across news, social media, and scientific literature.<br><br>
+      Doctoral Thesis: <a href="https://www.proquest.com/openview/e94f3f87805f96cb74ea358ea813a358/">Evidence-based Cross-genre Misinformation Detection</a>
 
   - content: people/header-phd-collaborator.md
 
@@ -73,7 +76,7 @@ profiles:
     scholar: CiRnspUAAAAJ
     github: KhiemPhi
     bio: >
-      Khiem Phi is a Ph.D. student collaborating with Banerjee on discourse comprehension and representation. The centerpiece of this work is on the use of attention weights and strategic negative mining to detect narrative acts of deflection and whataboutism on social media.
+      Khiem Phi is a Ph.D. student collaborating with Dr. Banerjee on discourse comprehension and representation. The centerpiece of this work is on the use of attention weights and strategic negative mining to detect narrative acts of deflection and whataboutism on social media.
 
   - name: Dikshya Mohanty
     position: "Ph.D. Student, Computer Science, Stony Brook University (advisor: Niranjan Balasubramanian)"
@@ -85,7 +88,7 @@ profiles:
     orcid: 0009-0000-2555-7161
     github: dikshyam
     bio: >
-      Dikshya Mohanty is a Ph.D. student collaborating with Banerjee on analysis of conflicting information and contested narratives, especially when information silos appear across national and language boundaries.
+      Dikshya Mohanty is a Ph.D. student collaborating with Dr. Banerjee on analysis of conflicting information and contested narratives, especially when information silos appear across national and language boundaries.
 
   - name: Ethan Myers
     position: "Ph.D. Student, Computer Science, Colorado State University, Fort Collins (advisor: Indrakshi ray)"
@@ -101,7 +104,7 @@ profiles:
     website: https://weimin17.github.io/
     scholar: IVed47cAAAAJ
     bio: >
-      Weimin Lyu was a Ph.D. student in Biomedical Informatics at Stony Brook University (advisor: Chao Chen). He collaborated with Wang and Banerjee in 2024-25 on developing efficient training paradigms for pragmatic language understanding tasks.
+      Weimin Lyu was a Ph.D. student in Biomedical Informatics at Stony Brook University (advisor: Chao Chen). He collaborated with Wang and Dr. Banerjee in 2024-25 on developing efficient training paradigms for pragmatic language understanding tasks.
 
   - content: people/header-collaborator.md
 
