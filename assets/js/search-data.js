@@ -37,12 +37,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+        },{id: "nav-datasets",
+          title: "Datasets",
+          description: "Open datasets released by the SCIRE Group and collaborators.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/repositories/";
+            window.location.href = "/datasets/";
           },
         },{id: "nav-teaching",
           title: "teaching",
