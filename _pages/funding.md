@@ -10,23 +10,24 @@ horizontal: 2
 <div class="scire-strip-wrap">
   <div class="scire-stats">
     <div class="scire-stat">
-      <span class="scire-stat-value">$1.059M</span>
+      <!-- 300k (NSF) + 249K (NSF) + 60K (AI3) + 20K (DOM) + 150K (SoFP) + 300K (Broadridge) -->
+      <span class="scire-stat-value">$1.079M</span>
       <span class="scire-stat-label">Total Research Funding</span>
     </div>
     <div class="scire-stat">
-      <span class="scire-stat-value">$549K</span>
+      <span class="scire-stat-value">$549K</span> <!-- 300K (NSF) + 249K (NSF) -->
       <span class="scire-stat-label">Federal Grants</span>
     </div>
     <div class="scire-stat">
-      <span class="scire-stat-value">$150K</span>
+      <span class="scire-stat-value">$150K</span> <!-- 150K SoFP -->
       <span class="scire-stat-label">Foundation Grants</span>
     </div>
     <div class="scire-stat">
-      <span class="scire-stat-value">$60K</span>
+      <span class="scire-stat-value">$80K</span> <!-- 60K AI3 + 20K DoM -->
       <span class="scire-stat-label">Intramural and State Grants</span>
     </div>
     <div class="scire-stat">
-      <span class="scire-stat-value">$300K</span>
+      <span class="scire-stat-value">$300K</span> <!-- 300K Broadridge -->
       <span class="scire-stat-label">Industry Sponsored Research</span>
     </div>
   </div>

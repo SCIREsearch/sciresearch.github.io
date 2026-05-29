@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Chaoyuan Zuo
-permalink: /people/chaoyuan-zuo
+permalink: /people/chaoyuan-zuo/
 nav: false
 ---
 

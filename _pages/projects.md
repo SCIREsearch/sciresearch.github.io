@@ -14,7 +14,8 @@ Our research develops the computational and theoretical machinery to make pragma
 <!-- div class="scire-strip-wrap">
   <div class="scire-stats">
     <div class="scire-stat">
-      <span class="scire-stat-value">$1.059M</span>
+      <!-- 300k (NSF) + 249K (NSF) + 60K (AI3) + 20K (DOM) + 150K (SoFP) + 300K (Broadridge) -->
+      <span class="scire-stat-value">$1.079M</span>
       <span class="scire-stat-label">in research funding</span>
     </div>
     <div class="scire-stat">
