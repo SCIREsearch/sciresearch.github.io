@@ -56,6 +56,20 @@ horizontal: 2
 <br>
 ###### **Industry-Sponsored Research**
 
+> **Legal and Financial Document Processing**
+> <br>
+> **Principal Investigator**
+> <br><br>
+> Source: Broadridge Financial Solutions, Inc.
+> <br>
+> Amount: $300,000
+> <br>
+> Year: 2018 - 2022
+> <br>
+> <br>
+> Research outputs are proprietary to Broadridge Financial Solutions under the terms of the industry agreement.
+{: .block-industry-project}
+
 <br>
 ###### **Extramural Federal Grants**
 

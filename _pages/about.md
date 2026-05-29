@@ -32,8 +32,8 @@ announcements:
       <span class="scire-stat-label">M.S. students</span>
     </div>
     <div class="scire-stat">
-      <span class="scire-stat-value">1</span>
-      <span class="scire-stat-label">open dataset resource</span>
+      <span class="scire-stat-value">2</span>
+      <span class="scire-stat-label">open dataset resources</span>
     </div>
     <div class="scire-stat">
       <span class="scire-stat-value">3</span>
@@ -61,7 +61,7 @@ announcements:
        alt="Ritwik Banerjee">
   <div class="more-info">
     <p>
-      <strong><a href="https://www.ritwikbanerjee.com/">Dr. Ritwik Banerjee</a></strong>
+      <strong><a href="/people/ritwik-banerjee/">Dr. Ritwik Banerjee</a></strong>
       &emsp;
       <a href="mailto:rbanerjee@cs.stonybrook.edu"><i class="fas fa-envelope"></i></a>
     </p>

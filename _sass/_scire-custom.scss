@@ -310,7 +310,6 @@ blockquote {
     margin-bottom: 0;
   }
 
-  /* Tips, warnings, and dangers blockquotes */
   &.block-extramural-grant {
     font-size: 0.9rem;
     border-color: var(--global-tip-block);
@@ -379,7 +378,22 @@ blockquote {
       color: var(--global-warning-block-title);
     }    
   }
+  
+  &.block-industry-project {
+    font-size: 0.9rem;
+    border-color: var(--global-divider-color);
+    background-color: var(--global-divider-color);
 
+    h1,  
+    h2,  
+    h3,  
+    h4,  
+    h5,  
+    h6 { 
+      color: var(--global-warning-block-title);
+    }    
+  }
+  
   &.block-danger {
     border-color: var(--global-danger-block);
     background-color: var(--global-danger-block-bg);
