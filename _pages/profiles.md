@@ -99,7 +99,7 @@ profiles:
 
   - name: Weimin Lyu
     position: Applied Scientist, Amazon
-    image: weimin-lyu.jpg
+    image: # weimin-lyu.jpg
     url: https://weimin17.github.io/
     website: https://weimin17.github.io/
     scholar: IVed47cAAAAJ
@@ -117,9 +117,9 @@ profiles:
     bio: >
       Indrakshi Ray is a Professor of Computer Science at Colorado State University whose research spans cybersecurity, privacy, database systems, and formal methods. She has held visiting appointments at the Air Force Research Laboratory, Naval Research Laboratory, and INRIA. Dr. Ray has authored more than 100 refereed publications and has led major international conferences, including ACM SACMAT and IFIP DBSec, in program and general chair roles. A senior member of both IEEE and Association for Computing Machinery, she is widely recognized for her leadership and contributions to the security and database research communities.
 
-  - name: Farrukh M. Koraishy
+  - name: Farrukh Koraishy
     position: Professor of Medicine (Nephrology), Stony Brook University
-    image: farrukh-koraishy.jpg
+    image: # farrukh-koraishy.jpg
     url: https://doctors.stonybrookmedicine.edu/provider/farrukh-m-koraishy/2250864
     website: https://doctors.stonybrookmedicine.edu/provider/farrukh-m-koraishy/2250864
     scholar: 7BhhI68AAAAJ
@@ -138,7 +138,7 @@ profiles:
 
   - name: Ruobing Li
     position: Associate Professor of Communication &amp; Journalism, Stony Brook University
-    image: ruobing-li-2.jpg
+    image: # ruobing-li-2.jpg
     url: https://www.aldacenter.org/commcms/journalism/about/ruobing_li.php
     website: https://www.aldacenter.org/commcms/journalism/about/ruobing_li.php
     scholar: 9eoMAIwAAAAJ
@@ -148,7 +148,7 @@ profiles:
 
   - name: H. Andrew Schwartz
     position: Associate Professor of Computer Science &amp; Psychology, Vanderbilt University
-    image: has.jpg
+    image: # has.jpg
     url: https://haschwartz.com/
     website: https://haschwartz.com/
     scholar: Na16PsUAAAAJ
