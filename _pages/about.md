@@ -2,7 +2,7 @@
 layout: about
 title: Mission
 permalink: /
-subtitle: Where Computational Linguistics, Machine Learning, Sociology, and Communication come together to build the next generation of Human-Centered AI
+subtitle: Computational Linguistics, Machine Learning, Sociology, and Communication unite to build the next generation of Human-Centered AI
 # subtitle: COMPUTATIONAL LINGUISTICS &nbsp; | &nbsp; MACHINE LEARNING &nbsp; | &nbsp; SOCIOLOGY &nbsp; | &nbsp; PSYCHOLOGY &nbsp; | &nbsp; ARTIFICIAL INTELLIGENCE
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page

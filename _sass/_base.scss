@@ -2,10 +2,16 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
 // Typography
 
+// html, body {
+//   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+// }
+
 html, body {
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: 'Raleway', 'Avenir Next', 'Nunito Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 p, h1, h2, h3,  h4, h5, h6 {
