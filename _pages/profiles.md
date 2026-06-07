@@ -39,6 +39,7 @@ profiles:
 
   - name: Chenlu Wang
     position: Research Scientist, Meta &bull; Ph.D. 2026
+    image: chenlu-wang.png
     url: /people/chenlu-wang/
     scholar: IzhsuogAAAAJ
     github: chenlu49
