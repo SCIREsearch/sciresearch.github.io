@@ -470,6 +470,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-multilingual-english-russian-and-mandarin-chinese-multinational-usa-uk-ukraine-russia-and-china-and-longitudinal-31-months-corpus-on-the-russo-ukrainian-war-is-published-in-lrec-2026-the-corpus-is-dubbed-dnipro-diverse-narratives-and-international-perspectives-on-the-russo-ukrainian-offensive-and-released-as-a-public-resource-on-zenodo-https-doi-org-10-5281-zenodo-20433469",
           title: 'Our multilingual (English, Russian, and Mandarin Chinese), multinational (USA, UK, Ukraine, Russia, and...',
           description: "",
+          section: "News",},{id: "news-position-paper-presented-at-the-first-workshop-on-sovereign-ai-for-collaborative-and-pluralistic-ai-ecosystems-acm-hcomp-2026-washington-dc-sovereignty-through-interdependence-epistemic-agency-intelligent-action-and-federated-ai",
+          title: 'Position paper presented at the First Workshop on Sovereign AI for Collaborative and...',
+          description: "",
           section: "News",},{id: "projects-clap",
           title: 'CLAP',
           description: "Computational Linguistics and AI for Patients",
@@ -510,6 +513,11 @@ ninja.data = [{
           description: "Non-Gricean discourse as computationally tractable pragmatic acts",
           section: "Projects",handler: () => {
               window.location.href = "/projects/pragmatic-language-understanding/";
+            },},{id: "projects-sovereign-ai-and-indic-languages",
+          title: 'Sovereign AI and Indic Languages',
+          description: "Epistemic agency and agency of cognition and action",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/sovereign-ai/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
