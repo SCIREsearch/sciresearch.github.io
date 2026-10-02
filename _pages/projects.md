@@ -9,7 +9,7 @@ horizontal: true
 
 Language is more than a tool for description &mdash; it persuades and promulgates; it deflects, distorts, and deceives; it constructs our realities as readily as it corrupts them. SCIRE (Latin: _to know_) studies the pragmatic dimensions of language: not what words denote, but what they do — how they maneuver, manipulate, and manufacture the appearance of credibility, consensus, and legitimacy in discourse. This is a central problem of language comprehension. “Meaning” is inseparable from context, intent, and social embedding, and computational systems that ignore this systematically fail at tasks where it matters most: detecting misinformation and manipulation, auditing regulatory compliance, and retrieving reliable information for patient-centric clinical insights.
 
-Our research develops the computational and theoretical machinery to make pragmatic language analysis tractable and consequential. We work across four interconnected areas — <span style="color: #3A5C7F; font-weight: 700;">pragmatic language analysis</span>, <span style="color: #D66037; font-weight: 700;">trustworthy AI and information integrity</span>, <span style="color: #6EA53A; font-weight: 700;">privacy and regulatory compliance</span>, and <span style="color: #EE9D3B; font-weight: 700;">biomedical NLP and healthcare AI</span> &mdash; united by the conviction that the most important AI systems are those designed to support socially-embedded, trustworthy decision-making rather than to optimize narrowly for benchmark performance.
+Our research develops the computational and theoretical machinery to make pragmatic language analysis tractable and consequential. We work across five interconnected areas — <span style="color: #D66037; font-weight: 700;">pragmatic language analysis</span>, <span style="color: #D66037; font-weight: 700;">trustworthy AI and information integrity</span>, <span style="color: #6EA53A; font-weight: 700;">privacy and regulatory compliance</span>, <span style="color: #EE9D3B; font-weight: 700;">biomedical NLP and healthcare AI</span>, and <span style="color: #3A5C7F; font-weight: 700;">sovereign AI</span> &mdash; united by the conviction that the most important AI systems are those designed to support socially-embedded, trustworthy decision-making rather than to optimize narrowly for benchmark performance.
 
 
 #### Pragmatic Language Analysis
@@ -92,6 +92,24 @@ close collaboration with clinicians and medical researchers at the Renaissance S
 Stony Brook University.
 
 {% assign section_projects = site.projects | where: "research_area", "biomedical-nlp" | sort: "importance" %}
+{% if section_projects.size > 0 %}
+<div class="projects">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2">
+    {% for project in section_projects %}
+      {% include projects_horizontal.liquid %}
+    {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+#### Sovereign AI
+
+We study what it means for a nation, community, or institution to have meaningful agency over the AI systems that shape its knowledge and decisions. Rather than treating sovereignty as insular, self-built infrastructure, our work frames it as _epistemic agency_ and _sovereignty of intelligent action_: the capacity to decide what to share, federate, localize, or exclude, and to keep exercising that judgment as models and dependencies evolve. This line of research connects to our broader work on multilingual and Indic-language NLP, information integrity, and federated approaches to building AI across borders.
+
+{% assign section_projects = site.projects | where: "research_area", "sovereign-ai" | sort: "importance" %}
 {% if section_projects.size > 0 %}
 <div class="projects">
   <div class="container">

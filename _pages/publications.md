@@ -17,6 +17,8 @@ nav_order: 4
 <span style="color: #6EA53A">■</span> &emsp; [Privacy and Security](/projects/nsf-eager-medann-2023/)
 <br>
 <span style="color: #EE9D3B">■</span> &emsp; [Biomedical NLP and Healthcare](/projects/ai-for-healthcare/)
+<br>
+<span style="color: #3A5C7F">■</span> &emsp; [Sovereign AI](/projects/sovereign-ai/)
 
 <div class="publications">
   {% bibliography %}
