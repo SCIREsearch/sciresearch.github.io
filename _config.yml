@@ -9,12 +9,16 @@ last_name: Banerjee
 contact_note: >
   # You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Computational methods for information integrity, pragmatic language understanding, privacy, and biomedical NLP
+  SCIRE studies how meaning depends on context: pragmatic language understanding, information integrity, privacy and 
+  regulatory compliance, sovereign AI, and Indic language processing.
 footer_text:
   Social & Computational Intelligence Research
 
   Department of Computer Science, Stony Brook University
-keywords: 
+keywords: >-
+    natural language processing, computational linguistics, pragmatics, computational argumentation,
+    misinformation, information integrity, privacy, regulatory compliance, sovereign AI,
+    Indic language processing, Paninian grammar, biomedical NLP, Stony Brook University
 lang: en 
 icon: scire-logo.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

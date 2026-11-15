@@ -21,7 +21,7 @@ profiles:
     linkedin: ritwikbanerjee
     location: New Computer Science, 100 Engineering Drive, Stony Brook
     bio: >
-      Ritwik Banerjee leads the SCIRE Group in the Department of Computer Science at Stony Brook University, where his research develops computational methods for understanding language beyond its literal meaning -- including argumentation, misinformation, and narrative manipulation. His research has been funded by the NSF (the SaTC program and the CNS division), the Society for Family Planning, the AI Innovation Institute, and Broadridge Financial Solutions, Inc. He has produced over 30 peer-reviewed publications, and advised three PhD students to completion, with alumni now at Meta (2026), Boeing AI (2024), and Nankai University (2021).
+      Ritwik Banerjee leads the SCIRE Group in the Department of Computer Science at Stony Brook University, where he is also affiliate faculty of the AI Innovation Institute. His research studies how meaning depends on context, and how language technology can remain accountable to it: in discourse (pragmatics, argumentation, and information integrity), in law (privacy and regulatory compliance across jurisdictions), and in language communities (sovereign AI and Indic language processing). He has advised three Ph.D. students to completion, who went on to join Nankai University as a tenure-track faculty, Meta as a Research Scientist, and Boeing AI as a NLP Researcher.
 
   - content: people/header-phd-current.md
 
@@ -92,7 +92,7 @@ profiles:
       Dikshya Mohanty is a Ph.D. student collaborating with Dr. Banerjee on analysis of conflicting information and contested narratives, especially when information silos appear across national and language boundaries.
 
   - name: Ethan Myers
-    position: "Ph.D. Student, Computer Science, Colorado State University, Fort Collins (advisor: Indrakshi ray)"
+    position: "Ph.D. Student, Computer Science, Colorado State University, Fort Collins (advisor: Indrakshi Ray)"
     image: emyers.jpg
     scholar: boICce4AAAAJ
     bio: >
@@ -119,7 +119,7 @@ profiles:
       Indrakshi Ray is a Professor of Computer Science at Colorado State University whose research spans cybersecurity, privacy, database systems, and formal methods. She has held visiting appointments at the Air Force Research Laboratory, Naval Research Laboratory, and INRIA. Dr. Ray has authored more than 100 refereed publications and has led major international conferences, including ACM SACMAT and IFIP DBSec, in program and general chair roles. A senior member of both IEEE and Association for Computing Machinery, she is widely recognized for her leadership and contributions to the security and database research communities.
 
   - name: Farrukh Koraishy
-    position: Professor of Medicine (Nephrology), Stony Brook University
+    position: Clinical Professor in Medicine (Nephrology), Stony Brook University
     image: # farrukh-koraishy.jpg
     url: https://doctors.stonybrookmedicine.edu/provider/farrukh-m-koraishy/2250864
     website: https://doctors.stonybrookmedicine.edu/provider/farrukh-m-koraishy/2250864
@@ -202,7 +202,7 @@ profiles:
     position: Software Development Engineer, Amazon Web Services
 
   - name: Ayla Ida Karakaş
-    position: Ph.D. Student, Linguistics<br>Yale University
+    position: Ph.D. Student, Computational Linguistics<br>Yale University
     image: ayla-karakas.jpg
     scholar: ocOz6R8AAAAJ
 ---

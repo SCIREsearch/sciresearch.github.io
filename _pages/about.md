@@ -2,14 +2,13 @@
 layout: about
 title: Mission
 permalink: /
-subtitle: Computational Linguistics, Machine Learning, Sociology, and Communication unite to build the next generation of Human-Centered AI
-# subtitle: COMPUTATIONAL LINGUISTICS &nbsp; | &nbsp; MACHINE LEARNING &nbsp; | &nbsp; SOCIOLOGY &nbsp; | &nbsp; PSYCHOLOGY &nbsp; | &nbsp; ARTIFICIAL INTELLIGENCE
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+subtitle: LANGUAGE &nbsp;&nbsp;&bull;&nbsp;&nbsp; CONTEXT &nbsp;&nbsp;&bull;&nbsp;&nbsp; ACCOUNTABLE INTELLIGENCE
+selected_papers: true  # includes a list of papers marked as "selected={true}"
+social: false          # includes social icons at the bottom of the page
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: false # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true      # includes a list of news items
+  scrollable: false  # adds a vertical scroll bar if there are more than 'limit' news items
+  limit: 5           # leave blank to include all the news in the `_news` folder
 # latest_posts:
   # enabled: false
   # scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
@@ -24,8 +23,8 @@ announcements:
       <span class="scire-stat-label">in research funding</span>
     </div>
     <div class="scire-stat">
-      <span class="scire-stat-value">4</span>
-      <span class="scire-stat-label">doctoral researchers</span>
+      <span class="scire-stat-value">3</span>
+      <span class="scire-stat-label">Ph.D. graduates</span>
     </div>
     <div class="scire-stat">
       <span class="scire-stat-value">43</span>
@@ -36,7 +35,7 @@ announcements:
       <span class="scire-stat-label">open dataset resources</span>
     </div>
     <div class="scire-stat">
-      <span class="scire-stat-value">3</span>
+      <span class="scire-stat-value">4</span>
       <span class="scire-stat-label">collaborating universities</span>
     </div>
   </div>
@@ -47,14 +46,23 @@ announcements:
     <span class="scire-collab-name">Colorado State University, Fort Collins</span>
     <span class="scire-collab-sep">·</span>
     <span class="scire-collab-name">University of Calgary</span>
+    <span class="scire-collab-sep">·</span>
+    <span class="scire-collab-name">Nankai University</span>
+  </div>
+  <div class="scire-collab-footer">
+    <span class="scire-collab-label">Ph.D. alumni —</span>
+    <span class="scire-collab-name">Meta</span>
+    <span class="scire-collab-sep">·</span>
+    <span class="scire-collab-name">Boeing AI</span>
+    <span class="scire-collab-sep">·</span>
+    <span class="scire-collab-name">Nankai University (faculty)</span>
   </div>
   <div class="scire-collab-footer scire-ug-footer">
     <span class="scire-collab-label">+ 22 undergraduate researchers from Computer Science, Linguistics, and Psychology.</span>
   </div>
   <br>
-  <p class="scire-highlight">Student involvement in research is a core value of our group at SCIRE. Of the M.S. and undergraduate students who have worked in our group, <b>19</b> have co-authored peer-reviewed publications at venues including ACL, EMNLP, IEEE ICHI, and others.</p>
+  <p class="scire-highlight">Student involvement in research is a core value of our group at SCIRE. Of the M.S. and undergraduate students who have worked in our group, <b>19</b> have co-authored peer-reviewed publications at venues including ACL, EMNLP, LREC, and IEEE ICHI.</p>
 </div>
-
 <div class="profile float-right">
   <img src="/assets/img/rb-profile-pic.png" 
        class="img-fluid z-depth-1 rounded-circle" 
@@ -76,18 +84,33 @@ announcements:
   </div>
 </div>
 
-**SCIRE** (Latin: "to know") explores and advances the frontiers of computational linguistics and its applications in
-contemporary society, designing and developing machine learning algorithms and models that promise unprecedented
-comprehension of natural language pragmatics. We investigate social problems expressed using human language, especially
-problems that rely on a careful analysis of context beyond the immediate linguistic neighborhood of such expressions,
-including the use of figurative language, e.g., fallacious argumentation by means of deflection, the use of subtle bias,
-and the use of perceptions created through rhetoric and dialectic maneuvers. Pushing these boundaries may enable rich
-applications across multiple domains such as computational journalism, representation learning, communication theory,
-healthcare informatics, human-computer interaction, and information retrieval. To develop these cutting-edge AI
-technology vectors, our research lies at the intersection of computational linguistics, machine learning, sociology,
-and psychology. 
+**SCIRE** (Latin: _to know_) studies how meaning depends on context, and builds language technology that remains
+accountable to the contexts in which it operates.
 
-Our core research areas are natural language pragmatics, semantic representation, information retrieval, and computational
-argumentation, which are explored through foundational theories in sociology, psychology, mathematics, and linguistics.
+What language does is rarely settled by its words alone. A technically true claim can be used to mislead. A privacy
+disclosure can be accurate under the law of one jurisdiction and non-compliant under another. A language model can be
+fluent in a language and still be indifferent to the grammatical and interpretive traditions of the people who speak it.
+Each of these is a failure to model context, and each arises where AI systems are now trusted with consequential
+judgments.
+
+Our research addresses three such contexts:
+
+- **Discourse.** How claims are framed, deflected, and distorted as they move across communities, genres, languages, and
+  platforms. This is the ground of our work on [pragmatic language understanding](/projects/pragmatic-language-understanding),
+  computational argumentation, and [information integrity](/projects/fallacies-propaganda-integrity).
+- **Jurisdiction.** Whether software does what its language says it does, and whether that language meets the law that
+  governs it. This is the ground of our work on [privacy and regulatory compliance](/projects/nsf-eager-medann-2023/) 
+  across legal regimes.
+- **Agency.** Whether a people can decide how the AI systems that mediate its knowledge are built, governed, and used. 
+  This is the ground of our work on [sovereign AI](/projects/sovereign-ai) and on Indic language processing grounded in
+  Pāṇinian grammar.
+
+Health is a recurring domain across all three: medical claims that drift as they pass from research to news to social
+media, health apps that incorrectly state what they do with personal data, and clinical text written for people rather
+than machines.
+
+Our methods are computational &mdash; representation learning, information retrieval, and models of pragmatic
+inference &mdash; but our questions draw on linguistics, sociology, communication, and law, because none of them can
+be answered from within a single discipline.
 <p style="margin-bottom: 1px;">&nbsp;</p>
 

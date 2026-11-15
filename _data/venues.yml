@@ -2,6 +2,10 @@
   url: https://aclanthology.org/venues/acl/
   color: "#D66037"
 
+"ACL Findings":
+  url: https://aclanthology.org/venues/acl/
+  color: "#D66037"
+
 "EMNLP":
   url: https://aclanthology.org/venues/emnlp/
   color: "#D66037"
@@ -29,3 +33,7 @@
 "ICHI":
   url: https://www.computer.org/csdl/proceedings/1803080
   color: "#EE9D3B"
+
+"HealthSec":
+  url: https://publish.illinois.edu/healthsec2026/
+  color: "#6EA53A"

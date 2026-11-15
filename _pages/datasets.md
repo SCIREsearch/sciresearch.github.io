@@ -30,7 +30,7 @@ Zenodo with permanent DOIs.
   <p class="ds-attr">Mohanty, Sabadyn, Rodrigues, Wang, Kalugade, and
   Banerjee &middot; Zenodo &middot; February 2026</p>
   <div class="ds-links">
-    <a class="ds-btn" href="https://doi.org/10.5281/zenodo.18470677"
+    <a class="ds-btn" href="https://doi.org/10.5281/zenodo.18470676"
        target="_blank" rel="noopener">
       <i class="fas fa-database"></i> Zenodo
     </a>
@@ -48,8 +48,8 @@ Zenodo with permanent DOIs.
   month     = feb,
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.18470677},
-  url       = {https://doi.org/10.5281/zenodo.18470677}
+  doi       = {10.5281/zenodo.18470676}, 
+  url       = {https://doi.org/10.5281/zenodo.18470676}
 }</pre>
   </details>
 </div>

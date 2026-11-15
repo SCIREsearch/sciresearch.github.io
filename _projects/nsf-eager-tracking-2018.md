@@ -4,7 +4,7 @@ title: Semantic Drift in Medical Information # title on the card
 heading: Semantic Drift in Medical Information # project page hading (needed for sponsor image)
 description: Health misinformation and deceptive support across genres
 research_area: trustworthy-ai
-img: assets/img/tracking-project-card-img.png
+img: assets/img/project-card-images/semantic-drift-card-img.png
 sponsor_img: assets/img/nsf-logo.png
 importance: 2
 category: Research Projects
@@ -115,7 +115,7 @@ information distortion rather than treating individual instances in isolation {%
 > <br><br>
 > {% reference zuo2019tocheck %}
 > &nbsp;&nbsp;&nbsp;&nbsp;
-> [<i class="fas fa-file-pdf"></i>](/assets/pdf/zuo2018tocheck-clef.pdf)
+> [<i class="fas fa-file-pdf"></i>](/assets/pdf/zuo2019tocheck-clef.pdf)
 > <br><br>
 > {% reference zuo2020querying %}
 > &nbsp;&nbsp;&nbsp;&nbsp;

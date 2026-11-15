@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Sovereign AI and Indic Languages
-description: Epistemic agency and agency of cognition and action
+title: Sovereign AI and Indic Language Processing
+description: Epistemic agency over the AI systems that shape a people's knowledge
+img: assets/img/project-card-images/sovereign-ai-card-img.png
 research_area: sovereign-ai
 importance: 1
 category: Research Projects
@@ -10,15 +11,20 @@ related_publications: false
 
 ---
 
-> [**Ritwik Banerjee**](https://www.ritwikbanerjee.com)<br>
+> [**Ritwik Banerjee**](https://www.ritwikbanerjee.com) \| Research Assistant Professor, Computer Science, Stony Brook University<br>
 > [**Lav R. Varshney**](https://researchconnect.stonybrook.edu/en/persons/lav-varshney/) \| Professor and Director, AI Innovation Institute, Stony Brook University<br>
-> [**Maneesh Kumar Singh**] \| VP of Machine Learning, BharatGen<br>
-> [**Kaushik Bhatta**] \| Partner, AI Alliance
+> **Maneesh Kumar Singh** \| VP of Machine Learning, BharatGen<br>
+> **Kaushik Bhatta** \| Partner, AI Alliance
 {: .block-tip }
 
 ---
 
-We study what it means for a nation, community, or institution to have meaningful agency over the AI systems that shape its knowledge and decisions. Rather than treating sovereignty as insular, self-built infrastructure, our work frames it as *epistemic agency* and *sovereignty of intelligent action*: the capacity to decide what to share, federate, localize, or exclude, and to keep exercising that judgment as models and dependencies evolve {%cite singh2026sovereign%}. This line of research connects to our broader work on multilingual and Indic-language NLP {%cite banerjee2026paninian%}, information integrity, and federated approaches to building AI across borders.
+We study what it means for a nation, community, or institution to have meaningful agency over the AI systems that shape 
+its knowledge and decisions. Rather than treating sovereignty as insular, self-built infrastructure, our work frames it 
+as *epistemic agency* and *sovereignty of intelligent action*: the capacity to decide what to share, federate, localize, 
+or exclude, and to keep exercising that judgment as models and dependencies evolve {%cite singh2026sovereign%}. This 
+line of research connects to our broader work on multilingual and Indic-language NLP {%cite banerjee2026paninian%}, 
+information integrity, and federated approaches to building AI across borders.
 
 ---
 

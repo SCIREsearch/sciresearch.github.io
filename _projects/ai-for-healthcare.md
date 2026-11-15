@@ -31,7 +31,7 @@ related_publications: false
 > [**I. V. Ramakrishnan**](https://www.cs.stonybrook.edu/people/faculty/ivramakrishnan), Professor, Computer Science <br>
 > **Mark C. Henry**, Professor and Chair Emeritus, Emergency Medicine <br>
 > **Matthew Perciavalle**, Clinical Pharmacist, Emergency Medicine <br>
-> [**Farrukh M. Koraishy**](https://renaissance.stonybrookmedicine.edu/medicine/nephrology/faculty_research/koraishy_research), Clinical Professor, Nephrology
+> [**Farrukh M. Koraishy**](https://renaissance.stonybrookmedicine.edu/medicine/nephrology/faculty_research/koraishy_research), Clinical Professor in Medicine (Nephrology)
 {: .block-warning}
 
 ---

@@ -8,5 +8,6 @@ inline: true
 related_posts: false
 ---
 
-Yunik Tamrakar and Ethan Myers publish their work on Android app permission fidelity @ **Privacy, Security, and Trust (PST 2025)**. &nbsp;&nbsp; [<i class="fas fa-file-pdf"></i>](https://ldklab.github.io/assets/papers/pst25-permissions.pdf) 
+Yunik Tamrakar and Ethan Myers publish their work on Android app permission fidelity @ **Privacy, Security, and Trust 
+(PST 2025)**. &nbsp;&nbsp; [<i class="fas fa-file-pdf"></i>](https://ldklab.github.io/assets/papers/pst25-permissions.pdf) 
 

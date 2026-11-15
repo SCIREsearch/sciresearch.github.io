@@ -5,17 +5,16 @@ heading: Want to work with us?
 permalink: /contact/
 nav: true
 nav_order: 6
-description: Prospective students, postdoctoral researchers, and collaborators.
+description: Prospective students, postdoctoral researchers, collaborators, and industry partners.
 ---
 
-The SCIRE (Social and Computational Intelligence Research) Group develops
-computational methods for understanding language beyond its literal meaning
-&mdash; argumentation, misinformation, narrative maneuvers, and regulatory
-compliance. Before reaching out, browse the [research themes](/research/) and
-[recent publications](/publications/) to see if there is a natural connection
-to your own interests.
-
-The principal investigator, Dr. Banerjee, can be reached at
+At the Social and Computational Intelligence Research (SCIRE) Group, we study how meaning depends on context, and build 
+language technology that remains accountable to the contexts in which it operates: the discourse in which a claim is 
+made, the law that governs a disclosure, and the agency of the peoples that AI systems serve. Before reaching out, 
+browse the [research themes](/projects/) and [recent publications](/publications/) to see if there is a natural 
+connection to your own interests.
+ 
+The principal investigator, Dr. Banerjee, can be reached at 
 [rbanerjee@cs.stonybrook.edu](mailto:rbanerjee@cs.stonybrook.edu).
 
 ---
@@ -24,12 +23,29 @@ The principal investigator, Dr. Banerjee, can be reached at
 >
 > Collaboration works best when it starts from a specific research question
 > rather than a general interest in working together. If your work touches
-> on misinformation, pragmatic language understanding, privacy and regulation,
-> or biomedical language processing &mdash; or if you work in political science,
-> sociology, public health, or law, and see a connection &mdash; please reach out
-> directly with a brief description of what you have in mind.
+> on pragmatic language understanding, misinformation, privacy and regulatory
+> compliance, sovereign AI, or Indic language processing &mdash; or if you work in
+> linguistics, sociology, communication, public health, or law, and see a
+> connection &mdash; please reach out directly with a brief description of what
+> you have in mind.
 {: .block-collaborators-contact}
 
+> #### <span style="color: #0076df">Industry Partners</span>
+>
+> SCIRE works with industry through sponsored research. Our past partners include
+> [Broadridge Financial Solutions](/funding/), which supported our work on legal and
+> financial document processing. We welcome new partnerships where an organization's
+> problem is also a research question &mdash; for example, auditing whether software
+> and its disclosures comply with privacy law across jurisdictions, detecting
+> misleading or manipulative claims in text, or extracting reliable information
+> from specialized documents. We also welcome inquiries about internships and
+> industry-funded fellowships for students in the group.
+>
+> A useful first email describes the problem, the data involved, and what a
+> successful outcome would look like. Sponsored research agreements, including
+> terms on data and intellectual property, are made through Stony Brook University.
+{: .block-industry-contact}
+ 
 > #### <span style="color: #2698ba">Postdoctoral Researchers</span>
 > 
 > The research group may occasionally host postdoctoral researchers on specific
@@ -49,7 +65,7 @@ The principal investigator, Dr. Banerjee, can be reached at
 > - describe your background in NLP and/or ML concisely,
 > - mention a specific paper or project from SCIRE and explain the connection
 >   to your own interests, and
-> - ask pose specific and well-formulated and convincing research question that you
+> - pose a specific, well-formulated, and convincing research question that you
 >   would like to pursue as your primary topic.
 >
 > The group is highly selective and admits very few students. Strong candidates
@@ -59,7 +75,7 @@ The principal investigator, Dr. Banerjee, can be reached at
 >
 > *Temporary or short-term research positions cannot be accommodated for candidates
 > outside Stony Brook University.*
-{: .block-prospectivephd-contant}
+{: .block-prospectivephd-contact}
 
 > #### Current Stony Brook Students
 > 

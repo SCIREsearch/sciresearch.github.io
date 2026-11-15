@@ -21,7 +21,7 @@ related_publications: false
 ---
 
 Every individual has certain ways of language use that are unique to them (very much like fingerprints).
-Such a unique use of grammar and other language features is known as a person's *idoiolect*, which can be used for accurate identification of a text's author &mdash; an important aspect of forensic linguistics. In this line of research, we investigate authorship attribution of various documents, including highly formal technical writings {%cite feng2012characterizing%} and collaborative multi-author documents {%cite zuo2019style%}. We also analyze the *process* of typing, investigating keystroke dynamics as a behavioral signal for deception detection and drawing an analogy between typing patterns and prosody in speech {%cite banerjee2014keystroke%}.
+Such a unique use of grammar and other language features is known as a person's *idiolect*, which can be used for accurate identification of a text's author &mdash; an important aspect of forensic linguistics. In this line of research, we investigate authorship attribution of various documents, including highly formal technical writings {%cite feng2012characterizing%} and collaborative multi-author documents {%cite zuo2019style%}. We also analyze the *process* of typing, investigating keystroke dynamics as a behavioral signal for deception detection and drawing an analogy between typing patterns and prosody in speech {%cite banerjee2014keystroke%}.
 
 <small><b>Note:</b> The project is not our current focus. It sees sporadic progress when there are students interested in pursuing this topic.</small>
 

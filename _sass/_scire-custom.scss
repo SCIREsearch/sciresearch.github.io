@@ -332,6 +332,12 @@ blockquote {
     }    
   }
 
+  &.block-industry-contact {
+    font-size: 0.9rem;
+    border-color: $blue-color;
+    h1, h2, h3, h4, h5, h6 { color: $blue-color; }
+  }
+
   &.block-collaborators-contact {
     font-size: 0.9rem;
     border-color: $indianred-color;
@@ -344,7 +350,7 @@ blockquote {
     h1, h2, h3, h4, h5, h6 { color: $cyan-color; }
   }
 
-  &.block-prospectivephd-contant {
+  &.block-prospectivephd-contact {
     font-size: 0.9rem;
     border-color: $orange-color;
     h1, h2, h3, h4, h5, h6 { color: $orange-color; }
@@ -594,4 +600,25 @@ blockquote {
   color: var(--global-text-color);
   overflow-x: auto;
   line-height: 1.55;
+}
+
+// Justify bulleted list items in page content, matching paragraph text.
+// Limited to <ul> so the numbered publications list (ol.bibliography) is unaffected.
+.post article ul li {
+  text-align: justify;
+}
+
+// Publications page: research-strand legend.
+// Two-column grid: the first column is as wide as the widest label ("[Jurisdiction]"),
+// so the project links in the second column start at the same position on every row.
+.strand-legend {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.5em;
+  row-gap: 0.25em;
+  margin-bottom: 1.5rem;
+
+  .strand-label {
+    white-space: nowrap;
+  }
 }

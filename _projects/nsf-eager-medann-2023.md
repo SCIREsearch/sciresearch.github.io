@@ -4,7 +4,7 @@ title: Investigating Medical Data against Privacy Laws
 heading: A Framework for Investigating Live Medical Data against Privacy Laws
 description: Privacy compliance in health apps and medical information systems
 research_area: privacy-compliance
-img: assets/img/medann-project-card-img.png
+img: assets/img/project-card-images/investigating-medical-data-card-img.png
 sponsor_img: assets/img/nsf-logo.png
 importance: 1
 category: Research Projects
@@ -31,7 +31,7 @@ related_publications: false
 
 > ##### Collaborators
 > [**Lorenzo De Carli**](https://ldklab.github.io/), Associate Professor of Electrical and Software Engineering, University of Calgary <br>
-> [**Shantanu Sharma**](https://web.njit.edu/~ss797/), Assitant Professor of Computer Science, New Jersey Institute of Technology <br>
+> [**Shantanu Sharma**](https://web.njit.edu/~ss797/), Assistant Professor of Computer Science, New Jersey Institute of Technology <br>
 > **Chaoyuan Zuo**, Lecturer (tenure-track), School of Journalism & Communication, Nankai University <br>
 {: .block-warning }
 

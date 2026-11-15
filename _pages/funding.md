@@ -10,25 +10,25 @@ horizontal: 2
 <div class="scire-strip-wrap">
   <div class="scire-stats">
     <div class="scire-stat">
-      <!-- 300k (NSF) + 249K (NSF) + 60K (AI3) + 20K (DOM) + 150K (SoFP) + 300K (Broadridge) -->
+      <!-- Full value of funded research led or co-led: 300,000 (NSF 2018) + 249,907 (NSF 2023 collaborative project) + 149,517 (SoFP) + 60,000 (AI3) + 20,000 (DoM) + 300,000 (Broadridge) = 1,079,424 -->
       <span class="scire-stat-value">$1.079M</span>
-      <span class="scire-stat-label">Total Research Funding</span>
+      <span class="scire-stat-label">Funded Research Led or Co-Led</span>
     </div>
     <div class="scire-stat">
-      <span class="scire-stat-value">$549K</span> <!-- 300K (NSF) + 249K (NSF) -->
+      <span class="scire-stat-value">$550K</span> <!-- 300,000 (NSF 2018) + 249,907 (NSF 2023 collaborative project) = 549,907 -->
       <span class="scire-stat-label">Federal Grants</span>
     </div>
     <div class="scire-stat">
-      <span class="scire-stat-value">$150K</span> <!-- 150K SoFP -->
+      <span class="scire-stat-value">$150K</span> <!-- 149,517 SoFP -->
       <span class="scire-stat-label">Foundation Grants</span>
     </div>
     <div class="scire-stat">
       <span class="scire-stat-value">$80K</span> <!-- 60K AI3 + 20K DoM -->
-      <span class="scire-stat-label">Intramural and State Grants</span>
+      <span class="scire-stat-label">Intramural Grants</span>
     </div>
     <div class="scire-stat">
-      <span class="scire-stat-value">$300K</span> <!-- 300K Broadridge -->
-      <span class="scire-stat-label">Industry Sponsored Research</span>
+      <span class="scire-stat-value">$300K</span> <!-- Broadridge -->
+      <span class="scire-stat-label">Industry Partnership</span>
     </div>
   </div>
 </div>
@@ -36,14 +36,14 @@ horizontal: 2
 ###### **Foundations and Non-Profit Organizations**
 
 > **<a href="https://societyfp.org/awarded_grants/sfp19-mdi2/">
->  The Anatomy of Belief-Driven Distortion: Computatonal Modeling of Contraceptive Narratives Across Social Media
+>  The Anatomy of Belief-Driven Distortion: Computational Modeling of Contraceptive Narratives Across Social Media
 > </a>**
 > <br>
 > **Principal Investigator**
 > <br><br>
 > Source: Society of Family Planning
 > <br>
-> Amount: $150,000
+> Amount: $149,517
 > <br>
 > Year: 2025 - 2027
 > <br>
@@ -54,15 +54,15 @@ horizontal: 2
 {: .block-foundation-grant}
 
 <br>
-###### **Industry-Sponsored Research**
+###### **Industry Partnerships**
 
 > **Legal and Financial Document Processing**
 > <br>
-> **Principal Investigator**
+> **Co-lead** of Stony Brook University's technical work (with one other faculty member)
 > <br><br>
-> Source: Broadridge Financial Solutions, Inc.
+> Partner: Broadridge Financial Solutions, Inc.
 > <br>
-> Amount: $300,000
+> Value to Stony Brook University: $300,000
 > <br>
 > Year: 2018 - 2022
 > <br>
@@ -77,18 +77,18 @@ horizontal: 2
 >  A Framework for Investigating Live Medical Data against Privacy Laws
 > </a>**
 > <br>
-> **Principal Investigator**
+> **Principal Investigator** (Collaborative Research with Colorado State University)
 > <br><br>
 > Source: National Science Foundation
 > <br>
-> Amount: $250,000
+> Amount: <span class="mathjax_ignore">$249,907 total (collaborative project); $124,964 to Stony Brook University</span>
 > <br>
 > Year: 2023 - 2025
 > <br>
 > <br>
 > Research Outcomes and Team:
 > <br>
-> &emsp; [&rarr; Invetigating Medical Data against Privacy Laws](/projects/nsf-eager-medann-2023/)
+> &emsp; [&rarr; Investigating Medical Data against Privacy Laws](/projects/nsf-eager-medann-2023/)
 > <br>
 > &emsp; [&rarr; Pragmatic Language Understanding](/projects/pragmatic-language-understanding/)
 {: .block-extramural-grant}
@@ -108,7 +108,7 @@ horizontal: 2
 > <br>
 > Research Outcomes and Team:
 > <br>
-> &emsp; [&rarr; Pragmatic Language Understanding](/projects/nsf-eager-tracking-2018/)
+> &emsp; [&rarr; Semantic Drift in Medical Information](/projects/nsf-eager-tracking-2018/)
 {: .block-extramural-grant}
 
 <br>

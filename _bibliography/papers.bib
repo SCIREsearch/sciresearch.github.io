@@ -1,6 +1,50 @@
 ---
 ---
 
+@inproceedings{banerjee2026jurisdiction,
+  author = {Banerjee, Ritwik and Ray, Indrakshi and De Carli, Lorenzo and Sharma, Shantanu and Myers, Ethan},
+  title = {{Jurisdiction-Aware End-to-End Auditing of Mobile Health Privacy}},
+  booktitle = {Cybersecurity in Healthcare (HealthSec'26): IEEE ACSAC42 Workshop},
+  year = {2026},
+  month = {December},
+  address = {Los Angeles, USA},
+  publisher = {IEEE},
+  abstract = {Mobile health (mHealth) applications now mediate uniquely sensitive data — from mental-health records to
+  real-time glucose and heart-rate telemetry — yet most of them fall outside the U.S. Health Insurance Portability and
+  Accountability Act (HIPAA), and recent enforcement actions show that the promise of health-data stewardship is
+  routinely broken. We consolidate several strands of work into a single, health-centered account of why these failures
+  persist and how they can be measured. Our synthesis is organized as an end-to-end, jurisdiction-aware auditing
+  pipeline with three layers: (i) a jurisdiction-agnostic legal abstraction that normalizes six data-protection regimes
+  onto the data lifecycle; (ii) automated privacy-policy analysis that extracts disclosed data practices and flags
+  transparency gaps; and (iii) app- and code-level auditing that reconciles stated functionality, requested permissions,
+   and observed data collection. Anchoring the pipeline is our measurement of 10,000+ mHealth apps — the first to
+   examine permission overreach, missing consent, and collection beyond consent together at scale — which finds that
+   69.15% of apps over-request permissions, approximately 93% of those that ran provide no consent mechanism at all, and
+   1 in every 14 apps that do ask for consent collect data beyond it. We argue the position that voluntary compliance
+   and app-store review are structurally insufficient for health data, and that automated, jurisdiction-aware auditing —
+   closing the gap that HIPAA's "covered entity" scope leaves open — should become a precondition for distributing
+   software that handles health information.},
+  bibtex_show = {true},
+  preview = {true},
+  note = {(To Appear)},
+  abbr = {HealthSec},
+}
+
+@article{myers2026bad,
+  author = {Myers, Ethan and De Carli, Lorenzo and Sharma, Shantanu and Banerjee, Ritwik and Reardon, Joel and Ray, Indrakshi},
+  title = {{Bad Diagnosis: Analyzing Consent and Data Collection Practices of Mobile Medical Apps}},
+  journal = {arXiv Preprint},
+  year = {2026},
+  month = {October},
+  archivePrefix = {arXiv},
+  doi = {10.48550/arXiv.2610.23851},
+  abstract = {Mobile health (mHealth) apps collect personally-identifiable information while handling uniquely sensitive medical data, ranging from mental health records to real-time glucose or heart rate monitoring -- yet they remain poorly understood at scale. We present the first comprehensive analysis of consent and data collection practices across 10,000+ mHealth apps on the Google Play Store, combining static analysis and privacy policy examination. We develop a rigorous operational definition to distinguish health apps from general wellness programs, and design a measurement framework to detect misuse of permissions and violations of consent. Our analyses reveal a troubling ecosystem: 69.15% of apps request at least one permission unrelated to their stated purpose, with over 52.9% apps requesting location data, and 50.5% and 34.9% apps requesting camera and microphone access, respectively -- despite no functional justification based on app descriptions and stated purposes. Most alarmingly, nearly 93% of apps fail to provide users with a consent form, directly violating regulatory requirements such as GDPR; and even among the remaining 7%, 1 in 14 demonstrate a gap between the obtained consent and collection of personally identifiable information. These findings demonstrate an urgent need for stronger enforcement of privacy regulations in mHealth apps. We plan to release our dataset and measurement tools for continued monitoring of this critical space.},
+  bibtex_show = {true},
+  pdf = {https://arxiv.org/pdf/2610.23851},
+  preview = {true},
+  arxiv = {2610.23851},
+}
+
 @misc{singh2026sovereign,
   author = {Singh, Maneesh Kumar and Banerjee, Ritwik and Varshney, Lav R. and Bhatta, Kaushik},
   title = {{Sovereignty Through Interdependence: Epistemic Agency, Intelligent Action, and Federated AI}},
@@ -9,7 +53,7 @@
   year = {2026},
   abstract = {Calls for Sovereign AI often focus on domestic ownership of data, compute, model weights, and deployment infrastructure. Recent scholarship and policy literature already show why full-stack autonomy is an incomplete objective, reframing sovereignty in terms of managed, strategic interdependence and national agency. Building on that premise, this position paper asks what such interdependence must preserve. We argue for two ends: (a) epistemic sovereignty, the legitimately governed capacity to shape how AI-mediated knowledge and understanding of a people are represented, validated, contested, and revised, both within AI knowledge stores and among people; and (b) sovereignty of intelligent action, the AI-mediated capacity of a population, and of the participating AI systems, for consequential goal-oriented action, together with the legitimate authority over how the goals, responsibility and accountability, and intervention and recourse associated with such action are allocated and delegated. We further describe ``sovereignization'' as the continuing process of creating, adapting, and continually augmenting participating AI systems in the service of stated sovereign ends. Sovereignty goals across individual, collective, and institutional units can conflict, requiring rights-preserving, contestable governance rather than prima facie priority for either global or local control. Federation is one important mechanism whereby a family of locally sovereign AI technologies can be created with shared epistemic and action substrates, leveraging shared information in open commons whenever positive cross-node transfer exists from non-poolable knowledge. We conclude with guidance on when shared, federated, local, retrieval-based, or excluded knowledge is appropriate: the resulting objective is not isolation but interdependence in which participating communities retain credible technical options, legitimate authority, and the capacity to keep learning.},
   bibtex_show = {true},
-  pdf = {https://drive.google.com/file/d/11QcwTV3Z4wa1vWq95CVnYeN-5DUl63EN/view},
+  pdf = {singh2026sovereign.pdf},
   preview = {true},
 }
 
@@ -41,12 +85,13 @@
   series = {CODASPY '26},
   doi = {10.1145/3800506.3803491},
   abstract = {Personal data has emerged as a highly valuable yet sensitive asset that drives business decisions, enables targeted advertising, and generates substantial revenue for companies, while simultaneously facilitating invasive monitoring of users. In recent years, research on digital privacy violations, including undue access, collection, and sharing of user data, has grown significantly. Much of this research adopts the European General Data Protection Regulation (GDPR) as the primary reference framework. This is reasonable, as GDPR was a pioneering legislation, and many of its stipulations are clear and unambiguous. However, we argue that focusing solely on GDPR (and a small set of other Western regulatory frameworks) ignores privacy-related concerns, attitudes, and problems faced by users from other locales, creating a significant research blind spot. This work systematically normalizes the heterogeneous legal requirements of multiple data protection laws into a unified abstraction aligned with the data lifecycle, which forms the foundation for the implementation of such regulations. We further investigate the implications of these laws on different stakeholders, including users, organizations, and governments. Overall, this work aims to broaden the digital privacy research community's perspective and to serve as a set of guiding principles for developing technological privacy solutions spanning multiple countries.},
+  arxiv = {2605.27801},
   bibtex_show = {true},
   pdf = {sharma2026codaspy.pdf},
   preview = {true},
   acceptance = {23},
   abbr = {CODASPY},
-  arxiv = {2605.27801},
+  selected = {true},
 }
 
 
@@ -68,6 +113,7 @@
   code = {https://github.com/dikshyam/dnipro-codebase},
   acceptance = {52.85},
   abbr = {LREC},
+  selected = {true},
 }
 
 @inproceedings{zuo2025hdcr,
@@ -88,7 +134,6 @@
   acceptance = {19.8},
 }
 
-
 @inproceedings{zuo2025large,
   author = {Zuo, Chaoyuan and Wang, Chenlu and Banerjee, Ritwik},
   booktitle = {2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)}, 
@@ -106,7 +151,6 @@
   abbr = {BIBM},
   acceptance = {19.8},
 }
-
 
 @inproceedings{raja2025idiosyncratic,
   author = {Vishnu Raja and Adithya V. Ganesan and Anand Syamkumar and Ritwik Banerjee and H. A. Schwartz},
@@ -141,7 +185,6 @@
   abstract={Android’s vast app ecosystem (over 2 million apps) poses significant privacy risks, as current methods for inferring permissions from descriptions -- keyword matching, traditional natural language processing (NLP), and recurrent neural networks (RNNs) -- struggle with accurate inference due to imprecise, ambiguous, or incomplete natural language descriptions. This gap undermines regulatory transparency and user trust, necessitating tools that reconcile stated functionality with actual data practices. We demonstrate that large language models like GPT-4o, applied in a zero-shot inference setting, leverage contextual reasoning to infer permissions competitively, while fine-tuned encoders (BERT, BART) surpass state-of-the-art performance when trained on minimally annotated datasets augmented with paraphrases, achieving 50–70\% gains in weighted and macro $F_1$ scores. By enabling precise permission auditing with reduced annotation costs, our work advances scalable, adaptable solutions for privacy compliance across resource-constrained and high-stakes environments.},
   bibtex_show ={true},
   pdf = {tamrakar2025harnessing.pdf},
-  selected = {false},
   preview = {true},
   abbr = {PST},
   acceptance = {16},
@@ -163,10 +206,8 @@
   bibtex_show ={true},
   pdf = {wang2025natural-renalfailure.pdf},
   html = {https://pmc.ncbi.nlm.nih.gov/articles/PMC12322987/},
-  selected = {false},
   preview = {true},
 }
-
 
 @inproceedings{gupta2025scire,
     author = {Gupta, Harsh P. and Banerjee, Ritwik},
@@ -184,7 +225,6 @@
     selected={false},
     preview={true}
 }
-
 
 @inproceedings{thapliyal2025,
     author = {Thapliyal, Parth Manish and Chavan, Ritesh Sunil and Samridh, Samridh and Zuo, Chaoyuan and Banerjee, Ritwik},
@@ -222,6 +262,7 @@
     arxiv = {2505.11829},
     abbr = {ACL},
     acceptance = {20.3},
+    selected = {true},
 }
 
 @inproceedings{phi2024paying,
@@ -240,10 +281,10 @@
   bibtex_show={true},
   pdf={phi2024paying.pdf},
   code={https://github.com/KhiemPhi/wabt-det},
-  selected={false},
   preview={true},
-  abbr = {ACL},
+  abbr = {ACL Findings},
   acceptance = {22.1},
+  selected = {true},
 }
 
 @inproceedings{zuo2024from,
@@ -302,6 +343,7 @@
   video = {https://slideslive.com/38939331/querying-across-geners-for-medical-claims-in-news},
   abbr = {EMNLP},
   acceptance = {22.4},
+  selected = {true},
 }
 
 @inproceedings{salekfaramarzi2023context,
@@ -435,7 +477,6 @@
   abbr = {ICHI},
   acceptance = {22.4},
 }
-
 
 @inproceedings{banerjee2015patient,
   author={Banerjee, Ritwik and Ramakrishnan, I.V. and Henry, Mark and Perciavalle, Matthew},
@@ -652,7 +693,6 @@
   pdf={zuo2022beyond-journal.pdf},
   html={https://pmc.ncbi.nlm.nih.gov/articles/PMC8807956/},
   code={https://github.com/chzuo/jdsa_cross_genre_validation},
-  selected={false},
   preview={true}
 }
 
@@ -665,6 +705,5 @@
   url = {https://archive.rsna.org/2016/16011009.html},
   bibtex_show = {true},
   html = {https://archive.rsna.org/2016/16011009.html},
-  selected = {false},
   preview = {true},
 }
