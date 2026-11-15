@@ -2,48 +2,42 @@
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
     <div
-      class="table-responsive"
+      class="news-list"
       {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
+        style="max-height: 60vw; overflow-y: auto;"
       {% endif %}
     >
-      <table class="table table-sm table-borderless" style="font-size: 0.8rem;">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
-          {% assign news_limit = page.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr style="line-height: 1.5;">
-            <th scope="row" style="width: 10%; font-weight: lighter; color: #6c757d; padding: 0.25rem 0.1rem;">{{ item.date | date: '%m.%Y.' }}</th>
-            <td style="padding: 0.25rem 0.5rem;">
-             <!-- News type badge -->
-              {% if item.newstype %}
-                  <span class="news-type news-type-{{ item.newstype | slugify }}">{{ item.newstype }}</span>
-                {% if item.newstype == "phd" %}
-                  <i class="fa-solid fa-graduation-cap"></i>
-                {% endif %}
-              {% endif %}
-            </td>
-            <td style="text-align: justify; padding: 0.25rem 0.5rem;">
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-              
-              <!-- Collaborators list -->
-              {% if item.collaborators %}
-                <div class="collaborators">
-                  Collaborators:
-                  {{ item.collaborators | array_to_sentence_string }}
-                </div>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
+      {% assign news = site.news | reverse %}
+      {% if include.limit and page.announcements.limit %}
+        {% assign news_limit = page.announcements.limit %}
+      {% else %}
+        {% assign news_limit = news_size %}
+      {% endif %}
+      {% for item in news limit: news_limit %}
+        <div class="news-item">
+          <div class="news-date">{{ item.date | date: '%b %Y' }}</div>
+          <div class="news-badge">
+            {% if item.newstype %}
+              <span class="news-type news-type-{{ item.newstype | slugify }}">
+                {%- if item.newstype == 'phd' -%}Ph.D.{%- else -%}{{ item.newstype }}{%- endif -%}
+              </span>
+            {% endif %}
+          </div>
+          <div class="news-body">
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endif %}
+            {% if item.collaborators %}
+              <div class="collaborators">
+                Collaborators:
+                {{ item.collaborators | array_to_sentence_string }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
     </div>
   {% else %}
     <p>No news so far...</p>

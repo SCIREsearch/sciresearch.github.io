@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2023-09-05
-# title: 
+# title:
 newstype: award
-collaborators: ["Dr. Indrakshi Ray, Colorado State University"]
+collaborators: ["Indrakshi Ray (Colorado State University)"]
 inline: true
 related_posts: false
 ---

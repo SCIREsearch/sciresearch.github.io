@@ -1,29 +1,77 @@
+// News list: three aligned columns (date | type badge | text).
+// Fixed-width first two columns keep every item's text starting at the same position.
+.news-list {
+  font-size: 0.85rem;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 5.5em 7em 1fr;
+  column-gap: 0.75rem;
+  align-items: baseline;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.news-date {
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+.news-body {
+  text-align: left;
+  line-height: 1.55;
+}
+
+// All badges share one width so the text column never shifts.
 .news-type {
-  font-size: 0.9rem;
-  padding: 0px 6px;
-  margin-left: 0px;
-  margin-right: 10px;
+  display: inline-block;
+  min-width: 6.5em;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  padding: 0 6px;
   border: 1px solid var(--global-back-to-top-bg-color);
   color: var(--global-text-color-light);
   border-radius: 14px;
   font-variant: small-caps;
 }
 
-.news-type-award {
-  font-size: 0.9rem;
-  margin-right: 35px;
-  border: 1px solid $indianred-color;
+.news-type-award,
+.news-type-phd {
+  border-color: $indianred-color;
   color: $indianred-color;
 }
 
 .collaborators {
   font-size: 0.8rem;
   color: var(--global-text-color-light);
-  margin-top: 5px;
+  margin-top: 0.25rem;
 }
 
-.news-type-phd {
-  font-size: 0.8rem;
-  border: 1px solid $indianred-color;
-  color: $indianred-color;
+// Narrow screens: date above badge in a slim left column; text takes the rest.
+@media (max-width: 576px) {
+  .news-item {
+    grid-template-columns: 6.5em 1fr;
+    grid-template-areas:
+      "date body"
+      "badge body";
+    row-gap: 0.25rem;
+  }
+
+  .news-date {
+    grid-area: date;
+  }
+
+  .news-badge {
+    grid-area: badge;
+  }
+
+  .news-body {
+    grid-area: body;
+  }
 }

@@ -125,7 +125,7 @@ html {
   height: 38px;
   border-radius: 50%;
   background: var(--global-theme-color);
-  opacity: 0.15;  // will be overridden below
+  opacity: 0.15; // will be overridden below
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +180,7 @@ html {
 // --- For highlight-worthy notes (e.g., central role of student research) ---
 .scire-highlight {
   font-size: 0.85rem;
-  color: #D66037;
+  color: #d66037;
 }
 
 // --- Project card overrides ---
@@ -193,6 +193,23 @@ html {
     box-shadow: none;
     transform: none;
     background-color: var(--global-hover-bg-color);
+  }
+}
+
+// Card accent follows the research line (same colors as the Research page headings and the Publications legend)
+.projects .card {
+  &.card-area-pragmatic-language,
+  &.card-area-trustworthy-ai {
+    border-left-color: #d66037; // Discourse
+  }
+  &.card-area-privacy-compliance {
+    border-left-color: #6ea53a; // Jurisdiction
+  }
+  &.card-area-sovereign-ai {
+    border-left-color: #3a5c7f; // Agency
+  }
+  &.card-area-biomedical-nlp {
+    border-left-color: #ee9d3b; // Health
   }
 }
 
@@ -268,13 +285,13 @@ html {
 
   .more-info {
     margin-top: 1rem;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 
-    p {  
+    p {
       font-size: 0.85rem;
       text-align: center;
       margin: 0;
-    }    
+    }
   }
 }
 
@@ -288,13 +305,13 @@ html {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%; 
+    width: 30%;
 
     .address {
-      p {  
+      p {
         display: block;
-      }    
-    }    
+      }
+    }
   }
 }
 
@@ -303,10 +320,10 @@ blockquote {
   background: var(--global-bg-color);
   border-left: 5px solid var(--global-theme-color);
   margin: 1.5em 0;
-  padding: 1em; 
+  padding: 1em;
   font-size: 0.9rem;
 
-  p {  
+  p {
     margin-bottom: 0;
   }
 
@@ -315,51 +332,86 @@ blockquote {
     border-color: var(--global-tip-block);
     background-color: var(--global-tip-block-bg);
 
-    em,  
-    li,  
-    p,   
+    em,
+    li,
+    p,
     strong {
       color: var(--global-tip-block-text);
-    }    
+    }
 
-    h1,  
-    h2,  
-    h3,  
-    h4,  
-    h5,  
-    h6 { 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-tip-block-title);
-    }    
+    }
   }
 
   &.block-industry-contact {
     font-size: 0.9rem;
     border-color: $blue-color;
-    h1, h2, h3, h4, h5, h6 { color: $blue-color; }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $blue-color;
+    }
   }
 
   &.block-collaborators-contact {
     font-size: 0.9rem;
     border-color: $indianred-color;
-    h1, h2, h3, h4, h5, h6 { color: $indianred-color; }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $indianred-color;
+    }
   }
 
   &.block-postdoc-contact {
     font-size: 0.9rem;
     border-color: $cyan-color;
-    h1, h2, h3, h4, h5, h6 { color: $cyan-color; }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $cyan-color;
+    }
   }
 
   &.block-prospectivephd-contact {
     font-size: 0.9rem;
     border-color: $orange-color;
-    h1, h2, h3, h4, h5, h6 { color: $orange-color; }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $orange-color;
+    }
   }
 
   &.block-current-contact {
     font-size: 0.9rem;
     border-color: $light-purple-color;
-    h1, h2, h3, h4, h5, h6 { color: $light-purple-color; }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $light-purple-color;
+    }
   }
 
   &.block-references {
@@ -372,58 +424,58 @@ blockquote {
     border-color: var(--global-warning-block);
     background-color: var(--global-warning-block-bg);
 
-    em,  
-    li,  
-    p,   
+    em,
+    li,
+    p,
     strong {
       color: var(--global-warning-block-text);
-    }    
+    }
 
-    h1,  
-    h2,  
-    h3,  
-    h4,  
-    h5,  
-    h6 { 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-warning-block-title);
-    }    
+    }
   }
 
   &.block-intramural-grant {
     font-size: 0.9rem;
 
-    em,  
-    li,  
-    p,   
+    em,
+    li,
+    p,
     strong {
       color: var(--global-warning-block-text);
-    }    
+    }
 
-    h1,  
-    h2,  
-    h3,  
-    h4,  
-    h5,  
-    h6 { 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-warning-block-title);
-    }    
+    }
   }
-  
+
   &.block-industry-project {
     font-size: 0.9rem;
     border-color: var(--global-divider-color);
     background-color: var(--global-divider-color);
 
-    h1,  
-    h2,  
-    h3,  
-    h4,  
-    h5,  
-    h6 { 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--global-warning-block-title);
-    }    
+    }
   }
-  
+
   &.block-danger {
     border-color: var(--global-danger-block);
     background-color: var(--global-danger-block-bg);
@@ -562,7 +614,9 @@ blockquote {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  transition: color 0.15s, border-color 0.15s;
+  transition:
+    color 0.15s,
+    border-color 0.15s;
 
   &:hover {
     color: var(--global-theme-color);
@@ -586,7 +640,9 @@ blockquote {
       color: var(--global-theme-color);
     }
 
-    &::-webkit-details-marker { display: none; }
+    &::-webkit-details-marker {
+      display: none;
+    }
   }
 }
 
