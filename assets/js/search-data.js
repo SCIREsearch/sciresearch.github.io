@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Peer-reviewed publications in reversed chronological order.",
+          description: "Publications in reverse chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -46,7 +46,7 @@ ninja.data = [{
           },
         },{id: "nav-contact",
           title: "Contact",
-          description: "Prospective students, postdoctoral researchers, and collaborators.",
+          description: "Prospective students, postdoctoral researchers, collaborators, and industry partners.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/contact/";
@@ -467,8 +467,11 @@ ninja.data = [{
           section: "News",},{id: "news-chenlu-wang-defends-her-ph-d-on-pragmatic-language-understanding-and-information-integrity-dr-wang-will-begin-her-next-chapter-as-a-research-scientist-at-meta",
           title: 'Chenlu Wang defends her Ph.D. on Pragmatic Language Understanding and Information Integrity. Dr....',
           description: "",
-          section: "News",},{id: "news-our-multilingual-english-russian-and-mandarin-chinese-multinational-usa-uk-ukraine-russia-and-china-and-longitudinal-31-months-corpus-on-the-russo-ukrainian-war-is-published-in-lrec-2026-the-corpus-is-dubbed-dnipro-diverse-narratives-and-international-perspectives-on-the-russo-ukrainian-offensive-and-released-as-a-public-resource-on-zenodo-https-doi-org-10-5281-zenodo-20433469",
+          section: "News",},{id: "news-our-multilingual-english-russian-and-mandarin-chinese-multinational-usa-uk-ukraine-russia-and-china-and-longitudinal-31-months-corpus-on-the-russo-ukrainian-war-is-published-in-lrec-2026-the-corpus-is-dubbed-dnipro-diverse-narratives-and-international-perspectives-on-the-russo-ukrainian-offensive-and-released-as-a-public-resource-on-zenodo-https-doi-org-10-5281-zenodo-18470676",
           title: 'Our multilingual (English, Russian, and Mandarin Chinese), multinational (USA, UK, Ukraine, Russia, and...',
+          description: "",
+          section: "News",},{id: "news-our-work-normalizing-the-requirements-of-data-protection-laws-across-multiple-countries-into-a-single-abstraction-aligned-with-the-data-lifecycle-published-in-acm-codaspy-2026",
+          title: 'Our work normalizing the requirements of data protection laws across multiple countries into...',
           description: "",
           section: "News",},{id: "news-position-paper-presented-at-the-first-workshop-on-sovereign-ai-for-collaborative-and-pluralistic-ai-ecosystems-acm-hcomp-2026-washington-dc-sovereignty-through-interdependence-epistemic-agency-intelligent-action-and-federated-ai",
           title: 'Position paper presented at the First Workshop on Sovereign AI for Collaborative and...',
@@ -493,11 +496,6 @@ ninja.data = [{
           description: "Stylometry, authorship attribution, and deceptive signals in digital writing",
           section: "Projects",handler: () => {
               window.location.href = "/projects/forensic-linguistics/";
-            },},{id: "projects-network-outage-analysis",
-          title: 'Network Outage Analysis',
-          description: "2015",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/network-outage-analysis-2015/";
             },},{id: "projects-investigating-medical-data-against-privacy-laws",
           title: 'Investigating Medical Data against Privacy Laws',
           description: "Privacy compliance in health apps and medical information systems",
@@ -513,9 +511,9 @@ ninja.data = [{
           description: "Non-Gricean discourse as computationally tractable pragmatic acts",
           section: "Projects",handler: () => {
               window.location.href = "/projects/pragmatic-language-understanding/";
-            },},{id: "projects-sovereign-ai-and-indic-languages",
-          title: 'Sovereign AI and Indic Languages',
-          description: "Epistemic agency and agency of cognition and action",
+            },},{id: "projects-sovereign-ai-and-indic-language-processing",
+          title: 'Sovereign AI and Indic Language Processing',
+          description: "Epistemic agency over the AI systems that shape a people&#39;s knowledge",
           section: "Projects",handler: () => {
               window.location.href = "/projects/sovereign-ai/";
             },},{
