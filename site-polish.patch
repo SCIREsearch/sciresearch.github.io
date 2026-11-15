@@ -1,0 +1,709 @@
+diff --git a/_includes/news.liquid b/_includes/news.liquid
+index 2751254..fb2f7a6 100644
+--- a/_includes/news.liquid
++++ b/_includes/news.liquid
+@@ -2,48 +2,42 @@
+   {% if site.news != blank %}
+     {% assign news_size = site.news | size %}
+     <div
+-      class="table-responsive"
++      class="news-list"
+       {% if include.limit and page.announcements.scrollable and news_size > 3 %}
+-        style="max-height: 60vw"
++        style="max-height: 60vw; overflow-y: auto;"
+       {% endif %}
+     >
+-      <table class="table table-sm table-borderless" style="font-size: 0.8rem;">
+-        {% assign news = site.news | reverse %}
+-        {% if include.limit and page.announcements.limit %}
+-          {% assign news_limit = page.announcements.limit %}
+-        {% else %}
+-          {% assign news_limit = news_size %}
+-        {% endif %}
+-        {% for item in news limit: news_limit %}
+-          <tr style="line-height: 1.5;">
+-            <th scope="row" style="width: 10%; font-weight: lighter; color: #6c757d; padding: 0.25rem 0.1rem;">{{ item.date | date: '%m.%Y.' }}</th>
+-            <td style="padding: 0.25rem 0.5rem;">
+-             <!-- News type badge -->
+-              {% if item.newstype %}
+-                  <span class="news-type news-type-{{ item.newstype | slugify }}">{{ item.newstype }}</span>
+-                {% if item.newstype == "phd" %}
+-                  <i class="fa-solid fa-graduation-cap"></i>
+-                {% endif %}
+-              {% endif %}
+-            </td>
+-            <td style="text-align: justify; padding: 0.25rem 0.5rem;">
+-              {% if item.inline %}
+-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+-              {% else %}
+-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+-              {% endif %}
+-              
+-              <!-- Collaborators list -->
+-              {% if item.collaborators %}
+-                <div class="collaborators">
+-                  Collaborators:
+-                  {{ item.collaborators | array_to_sentence_string }}
+-                </div>
+-              {% endif %}
+-            </td>
+-          </tr>
+-        {% endfor %}
+-      </table>
++      {% assign news = site.news | reverse %}
++      {% if include.limit and page.announcements.limit %}
++        {% assign news_limit = page.announcements.limit %}
++      {% else %}
++        {% assign news_limit = news_size %}
++      {% endif %}
++      {% for item in news limit: news_limit %}
++        <div class="news-item">
++          <div class="news-date">{{ item.date | date: '%b %Y' }}</div>
++          <div class="news-badge">
++            {% if item.newstype %}
++              <span class="news-type news-type-{{ item.newstype | slugify }}">
++                {%- if item.newstype == 'phd' -%}Ph.D.{%- else -%}{{ item.newstype }}{%- endif -%}
++              </span>
++            {% endif %}
++          </div>
++          <div class="news-body">
++            {% if item.inline %}
++              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
++            {% else %}
++              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
++            {% endif %}
++            {% if item.collaborators %}
++              <div class="collaborators">
++                Collaborators:
++                {{ item.collaborators | array_to_sentence_string }}
++              </div>
++            {% endif %}
++          </div>
++        </div>
++      {% endfor %}
+     </div>
+   {% else %}
+     <p>No news so far...</p>
+diff --git a/_includes/projects_horizontal.liquid b/_includes/projects_horizontal.liquid
+index b917fae..55ed4d8 100644
+--- a/_includes/projects_horizontal.liquid
++++ b/_includes/projects_horizontal.liquid
+@@ -1,6 +1,6 @@
+ <div class="col mb-4">
+   <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+-    <div class="card h-100 hoverable">
++    <div class="card h-100 hoverable{% if project.research_area %} card-area-{{ project.research_area }}{% endif %}">
+       <div class="row no-gutters">
+         {% if project.img %}
+           <div class="col-md-6">
+diff --git a/_news/2023-award-nsfeager.md b/_news/2023-award-nsfeager.md
+index 65d5e6a..afb1c14 100644
+--- a/_news/2023-award-nsfeager.md
++++ b/_news/2023-award-nsfeager.md
+@@ -1,9 +1,9 @@
+ ---
+ layout: post
+ date: 2023-09-05
+-# title: 
++# title:
+ newstype: award
+-collaborators: ["Dr. Indrakshi Ray, Colorado State University"]
++collaborators: ["Indrakshi Ray (Colorado State University)"]
+ inline: true
+ related_posts: false
+ ---
+diff --git a/_news/2023-award-sunysmall.md b/_news/2023-award-sunysmall.md
+index d974217..427bbd4 100644
+--- a/_news/2023-award-sunysmall.md
++++ b/_news/2023-award-sunysmall.md
+@@ -2,10 +2,9 @@
+ layout: post
+ date: 2023-01-10
+ newstype: award
+-collaborators: ["Dr. Farrukh Koraishy, Stony Brook School of Medicine"]
++collaborators: ["Farrukh Koraishy (Stony Brook School of Medicine)"]
+ inline: true
+ related_posts: false
+ ---
+ 
+ We receive a SUNY Multidisciplinary Small Team Award to identify natural language predictors of chronic kidney disease in patients with PTSD.
+-
+diff --git a/_news/2024-award-ai3.md b/_news/2024-award-ai3.md
+index 52fc3f8..833add3 100644
+--- a/_news/2024-award-ai3.md
++++ b/_news/2024-award-ai3.md
+@@ -1,12 +1,11 @@
+ ---
+ layout: post
+ date: 2024-12-10
+-# title: 
++# title:
+ newstype: award
+-collaborators: ["Dr. Ruobing Li, School of Communication & Journalism, Stony Brook University"]
++collaborators: ["Ruobing Li (School of Communication & Journalism, Stony Brook University)"]
+ inline: true
+ related_posts: false
+ ---
+ 
+ We are awarded a research grant from the **[AI Innovation Institute](https://ai.stonybrook.edu/)** to decode [argumentation and fallacies in digital media](https://ai.stonybrook.edu/about-us/News/ai-research-focuses-detecting-propaganda-and-fallacies-digital-media).
+-
+diff --git a/_news/2024-award-sompilot.md b/_news/2024-award-sompilot.md
+index d669a06..b2000f3 100644
+--- a/_news/2024-award-sompilot.md
++++ b/_news/2024-award-sompilot.md
+@@ -1,9 +1,9 @@
+ ---
+ layout: post
+ date: 2024-01-10
+-# title: 
++# title:
+ newstype: award
+-collaborators: ["Dr. Farrukh Koraishy, Stony Brook School of Medicine"]
++collaborators: ["Farrukh Koraishy (Stony Brook School of Medicine)"]
+ inline: true
+ related_posts: false
+ ---
+@@ -11,4 +11,3 @@ related_posts: false
+ We are awarded a pilot research grant from the **[Stony Brook School of Medicine](https://renaissance.stonybrookmedicine.edu/)** to investigate natural language signals of acute kidney injury in critically ill patients.
+ 
+ <!-- [Dr. Farrukh Koraishy](https://renaissance.stonybrookmedicine.edu/medicine/nephrology/faculty_research/koraishy_research) -->
+-
+diff --git a/_news/2025-publication-bibm.md b/_news/2025-publication-bibm.md
+index 94f4dc1..3705a9c 100644
+--- a/_news/2025-publication-bibm.md
++++ b/_news/2025-publication-bibm.md
+@@ -1,9 +1,9 @@
+ ---
+ layout: post
+ date: 2025-12-15
+-# title: 
++# title:
+ newstype: publication
+-collaborators: ["Chaoyuan Zuo, Nankai University"]
++collaborators: ["Chaoyuan Zuo (Nankai University)"]
+ inline: true
+ related_posts: false
+ ---
+@@ -11,7 +11,7 @@ related_posts: false
+ Two publications at IEEE International Conference on Bioinformatics and Biomedicine, **IEEE BIBM 2025**:
+ <br>
+ &emsp; On evidence-based reasoning across languages &emsp;
+-   [<i class="fas fa-file-pdf"></i>](https://drive.google.com/file/d/1gffZ3sSduF0ciiZ77LURYP7YCGIhwswh/view)
++[<i class="fas fa-file-pdf"></i>](https://drive.google.com/file/d/1gffZ3sSduF0ciiZ77LURYP7YCGIhwswh/view)
+ <br>
+ &emsp; On medical expert identification &emsp;
+-     [<i class="fas fa-file-pdf"></i>](https://drive.google.com/file/d/1yXoAYkmiZf4O7VQH6jeyao7vnzuGGikh/view)
++[<i class="fas fa-file-pdf"></i>](https://drive.google.com/file/d/1yXoAYkmiZf4O7VQH6jeyao7vnzuGGikh/view)
+diff --git a/_news/2025-publication-emnlp.md b/_news/2025-publication-emnlp.md
+index d2520a9..0edf56e 100644
+--- a/_news/2025-publication-emnlp.md
++++ b/_news/2025-publication-emnlp.md
+@@ -1,12 +1,11 @@
+ ---
+ layout: post
+ date: 2025-09-20
+-# title: 
++# title:
+ newstype: publication
+-collaborators: ["H. Andrew Schwartz @ Vanderbilt University"]
++collaborators: ["H. Andrew Schwartz (Vanderbilt University)"]
+ inline: true
+ related_posts: false
+ ---
+ 
+ Vishnu Raja's work on dysarthric speech @ **EMNLP 2025**. &nbsp;&nbsp; [<i class="fas fa-file-pdf"></i>](https://arxiv.org/abs/2509.16718)
+-
+diff --git a/_news/2025-publication-pst.md b/_news/2025-publication-pst.md
+index 5d4a10d..04314d0 100644
+--- a/_news/2025-publication-pst.md
++++ b/_news/2025-publication-pst.md
+@@ -3,11 +3,10 @@ layout: post
+ date: 2025-06-15
+ # title: Our Research on App Permission Fidelity
+ newstype: publication
+-collaborators: ["Dr. Lorenzo De Carli @ University of Calgary", "Dr. Indrakshi Ray @ Colorado State University"]
++collaborators: ["Lorenzo De Carli (University of Calgary)", "Indrakshi Ray (Colorado State University)"]
+ inline: true
+ related_posts: false
+ ---
+ 
+-Yunik Tamrakar and Ethan Myers publish their work on Android app permission fidelity @ **Privacy, Security, and Trust 
+-(PST 2025)**. &nbsp;&nbsp; [<i class="fas fa-file-pdf"></i>](https://ldklab.github.io/assets/papers/pst25-permissions.pdf) 
+-
++Yunik Tamrakar and Ethan Myers publish their work on Android app permission fidelity @ **Privacy, Security, and Trust
++(PST 2025)**. &nbsp;&nbsp; [<i class="fas fa-file-pdf"></i>](https://ldklab.github.io/assets/papers/pst25-permissions.pdf)
+diff --git a/_news/2026-chenlu-phd.md b/_news/2026-chenlu-phd.md
+index 57f8865..8681abc 100644
+--- a/_news/2026-chenlu-phd.md
++++ b/_news/2026-chenlu-phd.md
+@@ -6,4 +6,4 @@ inline: true
+ related_posts: false
+ ---
+ 
+-Chenlu Wang defends her Ph.D. on [Pragmatic Language Understanding and Information Integrity](https://www.cs.stonybrook.edu/phd-thesis-defense-pragmatic-language-understanding-and-information-integrity). **Dr. Wang will begin her next chapter as a Research Scientist at Meta.**.
++Chenlu Wang defends her Ph.D. on [Pragmatic Language Understanding and Information Integrity](https://www.cs.stonybrook.edu/phd-thesis-defense-pragmatic-language-understanding-and-information-integrity). **Dr. Wang will begin her next chapter as a Research Scientist at Meta.**
+diff --git a/_news/2026-publication-codaspy.md b/_news/2026-publication-codaspy.md
+index 10d5ba0..4a6b80e 100644
+--- a/_news/2026-publication-codaspy.md
++++ b/_news/2026-publication-codaspy.md
+@@ -3,15 +3,13 @@ layout: post
+ date: 2026-06-01
+ # title: Local Privacy Laws in a Globalized World
+ newstype: publication
+-collaborators: ["Dr. Shantanu Sharma @ New Jersey Institute of Technology", 
+-                "Dr. Lorenzo De Carli @ University of Calgary", 
+-                "Dr. Indrakshi Ray @ Colorado State University"]
++collaborators:
++  ["Shantanu Sharma (New Jersey Institute of Technology)", "Lorenzo De Carli (University of Calgary)", "Indrakshi Ray (Colorado State University)"]
+ inline: true
+ related_posts: false
+ ---
+ 
+-Our work normalizing the requirements of data protection laws across multiple countries into a single abstraction 
+-aligned with the data lifecycle. Published in **ACM CODASPY 2026**. 
+-&nbsp;
+-&nbsp; [<i class="fas fa-file-pdf"></i>](/assets/pdf/sharma2026codaspy.pdf) 
+-&nbsp; [<i class="ai ai-doi"></i>](https://doi.org/10.1145/3800506.3803491)
+\ No newline at end of file
++Our work normalizes the requirements of data protection laws across multiple countries into a single abstraction
++aligned with the data lifecycle. Published in **ACM CODASPY 2026**. &nbsp;
++[<i class="fas fa-file-pdf"></i>](/assets/pdf/sharma2026codaspy.pdf) &nbsp;
++[<i class="ai ai-doi"></i>](https://doi.org/10.1145/3800506.3803491)
+diff --git a/_news/2026-publication-sovereignai.md b/_news/2026-publication-sovereignai.md
+index f05b4a4..23598ed 100644
+--- a/_news/2026-publication-sovereignai.md
++++ b/_news/2026-publication-sovereignai.md
+@@ -3,15 +3,11 @@ layout: post
+ date: 2026-09-27
+ # title:
+ newstype: publication
+-collaborators: ["Maneesh Kumar Singh @ BharatGen", 
+-                "Lav R. Varshney @ Stony Brook University", 
+-                "Kaushik Bhatta @ AI Alliance"]
++collaborators: ["Maneesh Kumar Singh (BharatGen)", "Lav R. Varshney (Stony Brook University)", "Kaushik Bhatta (AI Alliance)"]
+ inline: true
+ related_posts: false
+ ---
+ 
+-Position paper presented at the First Workshop on Sovereign AI for Collaborative and Pluralistic AI Ecosystems (ACM 
+-HCOMP 2026, Washington, DC):
+-<br>
+-&emsp; Sovereignty Through Interdependence: Epistemic Agency, Intelligent Action, and Federated AI &emsp;
+-   [<i class="fas fa-file-pdf"></i>](https://drive.google.com/file/d/11QcwTV3Z4wa1vWq95CVnYeN-5DUl63EN/view)
++Position paper, _Sovereignty Through Interdependence: Epistemic Agency, Intelligent Action, and Federated AI_, presented at
++the First Workshop on Sovereign AI for Collaborative and Pluralistic AI Ecosystems (ACM HCOMP 2026, Washington, DC). &nbsp;
++[<i class="fas fa-file-pdf"></i>](/assets/pdf/singh2026sovereignty.pdf)
+diff --git a/_sass/_news-styles.scss b/_sass/_news-styles.scss
+index 304ee36..5582fd7 100644
+--- a/_sass/_news-styles.scss
++++ b/_sass/_news-styles.scss
+@@ -1,29 +1,77 @@
++// News list: three aligned columns (date | type badge | text).
++// Fixed-width first two columns keep every item's text starting at the same position.
++.news-list {
++  font-size: 0.85rem;
++}
++
++.news-item {
++  display: grid;
++  grid-template-columns: 5.5em 7em 1fr;
++  column-gap: 0.75rem;
++  align-items: baseline;
++  padding: 0.6rem 0;
++  border-bottom: 1px solid var(--global-divider-color);
++
++  &:last-child {
++    border-bottom: none;
++  }
++}
++
++.news-date {
++  color: var(--global-text-color-light);
++  white-space: nowrap;
++}
++
++.news-body {
++  text-align: left;
++  line-height: 1.55;
++}
++
++// All badges share one width so the text column never shifts.
+ .news-type {
+-  font-size: 0.9rem;
+-  padding: 0px 6px;
+-  margin-left: 0px;
+-  margin-right: 10px;
++  display: inline-block;
++  min-width: 6.5em;
++  text-align: center;
++  font-size: 0.8rem;
++  line-height: 1.4;
++  padding: 0 6px;
+   border: 1px solid var(--global-back-to-top-bg-color);
+   color: var(--global-text-color-light);
+   border-radius: 14px;
+   font-variant: small-caps;
+ }
+ 
+-.news-type-award {
+-  font-size: 0.9rem;
+-  margin-right: 35px;
+-  border: 1px solid $indianred-color;
++.news-type-award,
++.news-type-phd {
++  border-color: $indianred-color;
+   color: $indianred-color;
+ }
+ 
+ .collaborators {
+   font-size: 0.8rem;
+   color: var(--global-text-color-light);
+-  margin-top: 5px;
++  margin-top: 0.25rem;
+ }
+ 
+-.news-type-phd {
+-  font-size: 0.8rem;
+-  border: 1px solid $indianred-color;
+-  color: $indianred-color;
++// Narrow screens: date above badge in a slim left column; text takes the rest.
++@media (max-width: 576px) {
++  .news-item {
++    grid-template-columns: 6.5em 1fr;
++    grid-template-areas:
++      "date body"
++      "badge body";
++    row-gap: 0.25rem;
++  }
++
++  .news-date {
++    grid-area: date;
++  }
++
++  .news-badge {
++    grid-area: badge;
++  }
++
++  .news-body {
++    grid-area: body;
++  }
+ }
+diff --git a/_sass/_scire-custom.scss b/_sass/_scire-custom.scss
+index 0e89015..70fd98b 100644
+--- a/_sass/_scire-custom.scss
++++ b/_sass/_scire-custom.scss
+@@ -125,7 +125,7 @@ html {
+   height: 38px;
+   border-radius: 50%;
+   background: var(--global-theme-color);
+-  opacity: 0.15;  // will be overridden below
++  opacity: 0.15; // will be overridden below
+   display: flex;
+   align-items: center;
+   justify-content: center;
+@@ -180,7 +180,7 @@ html {
+ // --- For highlight-worthy notes (e.g., central role of student research) ---
+ .scire-highlight {
+   font-size: 0.85rem;
+-  color: #D66037;
++  color: #d66037;
+ }
+ 
+ // --- Project card overrides ---
+@@ -196,6 +196,23 @@ html {
+   }
+ }
+ 
++// Card accent follows the research line (same colors as the Research page headings and the Publications legend)
++.projects .card {
++  &.card-area-pragmatic-language,
++  &.card-area-trustworthy-ai {
++    border-left-color: #d66037; // Discourse
++  }
++  &.card-area-privacy-compliance {
++    border-left-color: #6ea53a; // Jurisdiction
++  }
++  &.card-area-sovereign-ai {
++    border-left-color: #3a5c7f; // Agency
++  }
++  &.card-area-biomedical-nlp {
++    border-left-color: #ee9d3b; // Health
++  }
++}
++
+ // Square images — remove all rounding
+ .projects .card img,
+ .projects .card .rounded-start,
+@@ -268,13 +285,13 @@ html {
+ 
+   .more-info {
+     margin-top: 1rem;
+-    margin-bottom: 5px; 
++    margin-bottom: 5px;
+ 
+-    p {  
++    p {
+       font-size: 0.85rem;
+       text-align: center;
+       margin: 0;
+-    }    
++    }
+   }
+ }
+ 
+@@ -288,13 +305,13 @@ html {
+ 
+ @media (min-width: 576px) {
+   .profile {
+-    width: 30%; 
++    width: 30%;
+ 
+     .address {
+-      p {  
++      p {
+         display: block;
+-      }    
+-    }    
++      }
++    }
+   }
+ }
+ 
+@@ -303,10 +320,10 @@ blockquote {
+   background: var(--global-bg-color);
+   border-left: 5px solid var(--global-theme-color);
+   margin: 1.5em 0;
+-  padding: 1em; 
++  padding: 1em;
+   font-size: 0.9rem;
+ 
+-  p {  
++  p {
+     margin-bottom: 0;
+   }
+ 
+@@ -315,51 +332,86 @@ blockquote {
+     border-color: var(--global-tip-block);
+     background-color: var(--global-tip-block-bg);
+ 
+-    em,  
+-    li,  
+-    p,   
++    em,
++    li,
++    p,
+     strong {
+       color: var(--global-tip-block-text);
+-    }    
+-
+-    h1,  
+-    h2,  
+-    h3,  
+-    h4,  
+-    h5,  
+-    h6 { 
++    }
++
++    h1,
++    h2,
++    h3,
++    h4,
++    h5,
++    h6 {
+       color: var(--global-tip-block-title);
+-    }    
++    }
+   }
+ 
+   &.block-industry-contact {
+     font-size: 0.9rem;
+     border-color: $blue-color;
+-    h1, h2, h3, h4, h5, h6 { color: $blue-color; }
++    h1,
++    h2,
++    h3,
++    h4,
++    h5,
++    h6 {
++      color: $blue-color;
++    }
+   }
+ 
+   &.block-collaborators-contact {
+     font-size: 0.9rem;
+     border-color: $indianred-color;
+-    h1, h2, h3, h4, h5, h6 { color: $indianred-color; }
++    h1,
++    h2,
++    h3,
++    h4,
++    h5,
++    h6 {
++      color: $indianred-color;
++    }
+   }
+ 
+   &.block-postdoc-contact {
+     font-size: 0.9rem;
+     border-color: $cyan-color;
+-    h1, h2, h3, h4, h5, h6 { color: $cyan-color; }
++    h1,
++    h2,
++    h3,
++    h4,
++    h5,
++    h6 {
++      color: $cyan-color;
++    }
+   }
+ 
+   &.block-prospectivephd-contact {
+     font-size: 0.9rem;
+     border-color: $orange-color;
+-    h1, h2, h3, h4, h5, h6 { color: $orange-color; }
++    h1,
++    h2,
++    h3,
++    h4,
++    h5,
++    h6 {
++      color: $orange-color;
++    }
+   }
+ 
+   &.block-current-contact {
+     font-size: 0.9rem;
+     border-color: $light-purple-color;
+-    h1, h2, h3, h4, h5, h6 { color: $light-purple-color; }
++    h1,
++    h2,
++    h3,
++    h4,
++    h5,
++    h6 {
++      color: $light-purple-color;
++    }
+   }
+ 
+   &.block-references {
+@@ -372,58 +424,58 @@ blockquote {
+     border-color: var(--global-warning-block);
+     background-color: var(--global-warning-block-bg);
+ 
+-    em,  
+-    li,  
+-    p,   
++    em,
++    li,
++    p,
+     strong {
+       color: var(--global-warning-block-text);
+-    }    
+-
+-    h1,  
+-    h2,  
+-    h3,  
+-    h4,  
+-    h5,  
+-    h6 { 
++    }
++
++    h1,
++    h2,
++    h3,
++    h4,
++    h5,
++    h6 {
+       color: var(--global-warning-block-title);
+-    }    
++    }
+   }
+ 
+   &.block-intramural-grant {
+     font-size: 0.9rem;
+ 
+-    em,  
+-    li,  
+-    p,   
++    em,
++    li,
++    p,
+     strong {
+       color: var(--global-warning-block-text);
+-    }    
+-
+-    h1,  
+-    h2,  
+-    h3,  
+-    h4,  
+-    h5,  
+-    h6 { 
++    }
++
++    h1,
++    h2,
++    h3,
++    h4,
++    h5,
++    h6 {
+       color: var(--global-warning-block-title);
+-    }    
++    }
+   }
+-  
++
+   &.block-industry-project {
+     font-size: 0.9rem;
+     border-color: var(--global-divider-color);
+     background-color: var(--global-divider-color);
+ 
+-    h1,  
+-    h2,  
+-    h3,  
+-    h4,  
+-    h5,  
+-    h6 { 
++    h1,
++    h2,
++    h3,
++    h4,
++    h5,
++    h6 {
+       color: var(--global-warning-block-title);
+-    }    
++    }
+   }
+-  
++
+   &.block-danger {
+     border-color: var(--global-danger-block);
+     background-color: var(--global-danger-block-bg);
+@@ -562,7 +614,9 @@ blockquote {
+   display: inline-flex;
+   align-items: center;
+   gap: 5px;
+-  transition: color 0.15s, border-color 0.15s;
++  transition:
++    color 0.15s,
++    border-color 0.15s;
+ 
+   &:hover {
+     color: var(--global-theme-color);
+@@ -586,7 +640,9 @@ blockquote {
+       color: var(--global-theme-color);
+     }
+ 
+-    &::-webkit-details-marker { display: none; }
++    &::-webkit-details-marker {
++      display: none;
++    }
+   }
+ }
+ 
+@@ -621,4 +677,4 @@ blockquote {
+   .strand-label {
+     white-space: nowrap;
+   }
+-}
+\ No newline at end of file
++}
